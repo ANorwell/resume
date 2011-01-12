@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<base>
+  <section name="Name">
+    Arron Norwell
+  </section>
+
+  <section name="Address">
+    120 Homewood Ave Suite 418
+    Toronto, ON
+    M4Y 2J3
+  </section>
+
+  <section name="Contact">
+    <entry><section name="ad">anorwell@gmail.com</section></entry>
+    <entry><section name="ad">647-987-3081</section></entry>
+  </section>
+
+  <section name="Experience">
+    
+    <entry>
+      <section name="title">Software Development Engineer in Test - Microsoft</section>
+      <section name="date">May 2009 - Aug 2010</section>
+      <section name="bullet">
+        <entry><section name="bd">Did stuff</section></entry>
+        <entry>><section name="bd">Did more stuff</section></entry>
+      </section>
+    </entry>
+
+  </section>
+</base>
