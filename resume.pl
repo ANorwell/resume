@@ -1,19 +1,19 @@
 #!/usr/local/bin/perl
 use warnings;
 use strict;
-
 use XML::LibXML;
 
-our $LOGLEVEL = 3;
-
+our $LOGLEVEL = 0;
 our $DELIM = '##';
 
-##TODO: special replacement for this allowing <entry>s that have just text.
-our $SECTION_NO_NAME = 'DATA';
+#When a section has a transform, it may use this variable name to indicate
+#where the entry values get placed.
+#(syntactic sugar to allow simple transforms to be applied to entries easily)
+our $SECTION_NO_NAME = 'VAL';
 
 our ($ENTRIES, $TEMPLATE, $TRANSFORM) = @ARGV;
 
-my $entries = openRoot($ENTRIES);
+my $base_entry = openRoot($ENTRIES);
 my $transform = openRoot($TRANSFORM);
 
 #slurp the template-file to a variable
@@ -25,7 +25,65 @@ my $template;
     close $fh;
 }
 
-print processTemplate($template, $transform, $entries);
+print processEntry($template, $transform, $base_entry);
+
+#Given a template containing ##name## variables to be resolved,
+#and $root, an entry
+sub processEntry {
+    my ($template, $transform_map, $root) = @_;
+
+    while ($template =~ m/$DELIM(\w+)$DELIM/) {
+        my $sec_name = $1;
+        logg(1, "found var $sec_name in template");
+
+        #If the template has an unnamed variable, then the current entry
+        #contains the value of that variable, and we should set this directly
+        #bug: may not play nice if ##VAL## coexists in template with
+        #other variables.
+        if ($sec_name eq $SECTION_NO_NAME) {
+            my $v = $root->textContent;
+            $template =~ s/$DELIM$sec_name$DELIM/$v/g;
+            next;
+        }
+
+        my @sections = getNamedSections($root,$sec_name);
+        unless (@sections) {
+            die "$sec_name does not resolve to anything in: $template\n";
+        }
+
+        foreach my $sec (@sections) {
+            my $section_value = processSection($sec, $sec_name, $transform_map);
+            $template =~ s/$DELIM$sec_name$DELIM/$section_value/;
+        }
+    }
+    return $template;
+}
+
+#Given a section ##NAME##, gets the resolved value of that section.
+sub processSection {
+    my ($sec, $sec_name, $transform_map) = @_;
+    my $section_value = '';
+
+    foreach my $entry (getEntries($sec)) {
+
+        #apply transform, if there is one
+        my $trans = getTransform($transform_map, $sec_name);
+
+        if ($trans) {
+            #Recursively resolve the transformed section, using only
+            #The sections contained in this entry.
+            logg(1, "transform is $trans");
+            logg(1, "Doing recursive lookup an entry for $sec_name");
+            $section_value .= processEntry($trans, $transform_map, $entry);
+        } else {
+            #Base case: no transforms, so just replace the var with
+            #all the entries.
+            $section_value .= $entry->textContent;
+            logg(1, "Base case: entry is $section_value");
+        }
+    }
+    return $section_value;
+}
 
 sub openRoot {
     my $file = shift;
@@ -42,7 +100,16 @@ sub getNamedSections {
       $root->getChildrenByTagName('section')
 }
 
-sub getEntries { return (+shift)->getChildrenByTagName('entry'); }
+sub getEntries {
+    my $node = shift;
+    my @entries = $node->getChildrenByTagName('entry'); ;
+
+    #If there is only a single entry, then the entry tag maybe omitted. We may
+    #return a list with the current node in this case; then, which will be
+    #treated as an entry node.
+    return @entries if (scalar @entries);
+    return ($node);
+}
 
 sub getTransform {
     my ($root, $name) = @_;
@@ -53,107 +120,6 @@ sub getTransform {
         return $trans[0]->textContent;
     }
     return 0;
-}
-
-sub processTemplate {
-    my ($template, $transform_map, $root) = @_;
-
-    while ($template =~ m/$DELIM(\w+)$DELIM/) {
-        my $sec_name = $1;
-        logg(1, "found var $sec_name in template");
-
-        my @sections = getNamedSections($root,$sec_name);
-        unless (@sections) {
-            die "$sec_name does not resolve to anything in template $template\n";
-        }
-        
-        foreach my $sec (@sections) {
-            logg(1,"sec loop for $sec_name");
-            my $entry_value = '';
-            foreach my $entry (getEntries($sec)) {
-
-
-                #apply transform, if there is one
-                my $trans = getTransform($transform_map, $sec_name);
-
-                if ($trans) {
-                    #Recursively resolve the transformed section, using only
-                    #The sections contained in this entry.
-                    logg(1, "transform is $trans");
-                    logg(1, "Doing recursive lookup an entry for $sec_name");
-                    $entry_value .= processTemplate($trans, $transform_map, $entry);
-                } else {
-                    #Base case: no transforms, so just replace the var with all the entries.
-                    $entry_value .= $entry->textContent;
-                    logg(1, "Base case: entry is $entry_value");
-                }
-            }
-
-            #The actual replacement.
-            logg(1,"Replacing");
-            $template =~ s/$DELIM$sec_name$DELIM/$entry_value/;
-        }
-    }
-    return $template;
-}
-
-
-sub processTemplateOld {
-    my ($file, $template_file, $transform_file) = @_;
-    my $parser = XML::LibXML->new();
-    my $doc = $parser->load_xml(location => $file);
-    my $root = $doc->documentElement();
-    logg(1,$root->nodeName);
-
-    #slurp the template-file to a variable
-    my $template;
-    {
-        open my $fh, '<', $template_file || die $!;
-        local $/;
-        $template = <$fh>;
-        close $fh;
-    }
-
-    getTransformInfo($transform_file);
-
-    foreach my $elt ($root->getChildrenByTagName('section')) {
-
-        $template = processSection($elt, $template);
-    }
-
-    print $template;
-}
-
-sub getTransformInfo {
-    my $file = shift;
-    my $parser = XML::LibXML->new();
-    my $doc = $parser->load_xml(location => $file);
-    my $root = $doc->documentElement();
-}
-    
-
-sub processSection {
-    my ($section, $template) = @_;
-    my $name = $section->getAttribute('name');
-    my $match = $DELIM . $name . $DELIM;
-    logg(1, "Processing section $name, $match ");
-
-    #If there are entry children, use them.
-    #Otherwise, the text child forms the single entry.
-    my @ents = map {$_->textContent } $section->getChildrenByTagName('entry');
-    $ents[0] = $section->textContent unless (@ents);
-
-    foreach my $ent (@ents) {
-        logg(1,"Processing entry $ent");
-        #We do a SINGLE replacement of this entry in the template
-        $template =~ s/$match/$ent/;
-    }
-    return $template;
-}
-
-
-sub findTemplates {
-    opendir(my $dirh, './') || die "Couldn't open dir: $!";
 }
 
 sub logg {

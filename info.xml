@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<base>
+<entry>
   <section name="Name">
     Arron Norwell
   </section>
@@ -21,10 +21,10 @@
       <section name="title">Software Development Engineer in Test - Microsoft</section>
       <section name="date">May 2009 - Aug 2010</section>
       <section name="bullet">
-        <entry><section name="bd">Did stuff</section></entry>
-        <entry>><section name="bd">Did more stuff</section></entry>
+        <entry>Did stuff</entry>
+        <entry><section name="bd">Did more stuff</section></entry>
       </section>
     </entry>
 
   </section>
-</base>
+</entry>
