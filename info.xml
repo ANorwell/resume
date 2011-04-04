@@ -4,27 +4,33 @@
     Arron Norwell
   </section>
 
-  <section name="Address">
-    120 Homewood Ave Suite 418
-    Toronto, ON
-    M4Y 2J3
-  </section>
-
-  <section name="Contact">
-    <entry><section name="ad">anorwell@gmail.com</section></entry>
-    <entry><section name="ad">647-987-3081</section></entry>
+  <section name="ContactMain">
+    <section name="Contact">
+      <entry>anorwell@gmail.com</entry>
+      <entry>647-987-3081</entry>
+    </section>
+    <section name="Address">
+      120 Homewood Ave Suite 418
+      Toronto, ON
+      M4Y 2J3
+    </section>
   </section>
 
   <section name="Experience">
     
-    <entry>
-      <section name="title">Software Development Engineer in Test - Microsoft</section>
-      <section name="date">May 2009 - Aug 2010</section>
-      <section name="bullet">
-        <entry>Did stuff</entry>
-        <entry><section name="bd">Did more stuff</section></entry>
-      </section>
-    </entry>
+    <section name="Position">
+      <entry>
+        <section name="Title">Software Development Engineer in Test - Microsoft</section>
+        <section name="Date">May 2009 - Aug 2010</section>
+        <section name="Location">Mountain View, California</section>
+        <section name="Company">Microsoft</section>
+        <section name="URL">http://tellme.com</section>
+        <section name="Bullet">
+          <entry>Did stuff</entry>
+          <entry><section name="bd">Did more stuff</section></entry>
+        </section>
+      </entry>
+    </section>
 
   </section>
 </entry>

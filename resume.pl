@@ -11,15 +11,15 @@ our $DELIM = '##';
 #(syntactic sugar to allow simple transforms to be applied to entries easily)
 our $SECTION_NO_NAME = 'VAL';
 
-our ($ENTRIES, $TEMPLATE, $TRANSFORM) = @ARGV;
+our ($INFO, $TEMPLATE, $TRANSFORM) = @ARGV;
 
-my $base_entry = openRoot($ENTRIES);
+my $base_entry = openRoot($INFO);
 my $transform = openRoot($TRANSFORM);
 
 #slurp the template-file to a variable
 my $template;
 {
-    open my $fh, '<', $TEMPLATE || die $!;
+    open my $fh, '<', $TEMPLATE || die "template $TEMPLATE missing: $!";
     local $/;
     $template = <$fh>;
     close $fh;
