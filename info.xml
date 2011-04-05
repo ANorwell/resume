@@ -22,7 +22,7 @@
       <entry>
         <section name="Title">Software Development Engineer in Test - Microsoft</section>
         <section name="Date">May 2009 - Aug 2010</section>
-        <section name="Location">Mountain View, California</section>
+        <section name="Location">Mountain View, CA</section>
         <section name="Company">Microsoft</section>
         <section name="URL">http://tellme.com</section>
         <section name="Bullet">
@@ -31,6 +31,36 @@
         </section>
       </entry>
     </section>
-
   </section>
+
+  <section name="Education">
+    <section name="Position">
+      <entry>
+        <section name="Company">University of Toronto</section>
+        <section name="Date">Sept 2010 - Present</section>
+        <section name="Location">Toronto, ON</section>
+        <section name="URL">http://cs.toronto.edu/~anorwell</section>
+        <section name="Title">Masters - Computer Science</section>
+        <section name="Bullet">
+          <entry>GPA: A+ </entry>
+          <entry>Theoretical Computer Science</entry>
+        </section>
+      </entry>
+
+        <entry>
+        <section name="Company">University of British Columbia</section>
+        <section name="Date">2006-2009</section>
+        <section name="Location">Vancouver, BC</section>
+        <section name="URL">http://ubc.ca</section>
+        <section name="Title">BS - Combined Honours, Mathematics and Computer Science</section>
+        <section name="Bullet">
+          <entry>GPA: 90ish</entry>
+        </section>
+        </entry>
+    </section>
+        
+  </section>
+
+  <section name="Projects">Projects-todo</section>
+  
 </entry>
