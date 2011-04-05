@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<base>
+
+<transform name="ContactMain"><![CDATA[
+  <p id="bio_left">
+    ##Contact##
+  </p>
+  <p id="bio_right">
+  ##Address##</p>
+]]></transform>
+
+<transform name="Contact"><![CDATA[##VAL## <br/>]]></transform>
+
+<transform name="Bullet"><![CDATA[<li>##VAL##</li>]]></transform>
+
+<transform name="Position"><![CDATA[
+  <div class="job">
+    <p class="date">##Date##</p>
+    <div class="job_data">
+      <h3><a href="##URL##">##Company##</a></h3>
+      <p class="location">##Location##</p>
+      <p class="position">##Title##</p>
+      <ul>
+        ##Bullet##
+      </ul>
+    </div>
+  </div>
+]]></transform>
+
+<transform name="Experience"><![CDATA[
+  <h2>EXPERIENCE</h2>
+  ##Position##
+]]></transform>
+
+<transform name="Education"><![CDATA[
+  <h2>EDUCATION</h2>
+  ##Position##
+]]></transform>
+
+<transform name="Projects"><![CDATA[
+  <h2>PROJECTS</h2>
+]]></transform>
+
+</base>
