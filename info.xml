@@ -10,9 +10,8 @@
       <entry>647-987-3081</entry>
     </section>
     <section name="Address">
-      120 Homewood Ave Suite 418
-      Toronto, ON
-      M4Y 2J3
+      <entry>120 Homewood Ave Suite 418</entry>
+      <entry>Toronto, ON M4Y 2J3</entry>
     </section>
   </section>
 
@@ -26,8 +25,12 @@
         <section name="Company">Microsoft</section>
         <section name="URL">http://tellme.com</section>
         <section name="Bullet">
-          <entry>Did stuff</entry>
-          <entry><section name="bd">Did more stuff</section></entry>
+          <entry>Engineered tests for VOIP platform infrastructure used by large corporate clients to handle thousands of calls per day</entry>
+          <entry>Led project to Design and implement VOIP test framework for quick and flexible creation and execution of tests</entry>
+          <entry>Designed and implemented environment and tools for nightly builds of code and automated execution of tests against those builds</entry>
+          <entry>Ran and evaluated VOIP call performance. Designed VOIP performance test execution and graphing tools.</entry>
+          <entry>Interviewed potiential new hires</entry>
+          <entry>Languages: Perl, C++, Javascript, R</entry>
         </section>
       </entry>
     </section>
@@ -61,6 +64,22 @@
         
   </section>
 
-  <section name="Projects">Projects-todo</section>
-  
+  <section name="Projects">
+    <section name="Project">
+      <entry>
+        <section name="Name">Graph.js</section>
+        <section name="URL">http://anorwell.com/graph/</section>
+        <section name="CodeURL">https://github.com/ANorwell/graph</section>
+        <section name="Description">A Javascript Graph creation and visualization API using HTML 5 Canvas. Allows for flexible appearance.  The example app created using this API allows users to draw and save (to MySQL DB) graphs, and then share them via URL. </section>
+      </entry>
+
+      <entry>
+        <section name="Name">Website</section>
+        <section name="URL">http://anorwell.com/</section>
+        <section name="CodeURL">https://github.com/ANorwell/website</section>
+        <section name="Description">My personal website is a minimally-featured blog tool written from scratch. Implemented feature-equivalently in two versions: Ajax with a Python/MySQL backend, and PHP.  Supports upload, storage, and display of posts and music, as well as comments using Facebook's comment system. </section>
+      </entry>
+
+    </section>
+  </section>
 </entry>
