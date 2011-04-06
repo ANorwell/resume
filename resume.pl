@@ -85,6 +85,7 @@ sub processSection {
     return $section_value;
 }
 
+#Returns the libxml2 root object for the provided XMl file.
 sub openRoot {
     my $file = shift;
     my $parser = XML::LibXML->new();
@@ -94,6 +95,7 @@ sub openRoot {
     return $root;
 }
 
+#Given a node in a section tree, returns the sections of the given name
 sub getNamedSections {
     my ($root, $name) = @_;
     return grep {$_->getAttribute('name') eq $name }
