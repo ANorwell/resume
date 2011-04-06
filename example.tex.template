@@ -1,0 +1,16 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document}
+\name{##Name##}
+##ContactMain##
+ 
+\begin{resume}
+
+\section{EXPERIENCE}
+##Experience##
+
+\end{resume}
+\end{document}

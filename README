@@ -1,0 +1,4 @@
+A tool for creating multiple versions of a resume (or other document)
+by combining an Info XML file with template files that define the
+formatting to be applied to the info. For example, generate a latex
+and html version of the same resume.

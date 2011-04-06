@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<base>
+  <transform name='Experience'>##Position##</transform>
+    <transform name="Position">
+{\sl ##Title##} \hfill ##Date## \\
+                 \begin{itemize}  \itemsep -2pt % reduce space between items
+                 ##Bullet##
+                \end{itemize}
+    </transform>
+
+  <transform name="Bullet">\item ##VAL##</transform>
+
+    <transform name="ContactMain">##Contact##</transform>
+    <transform name="Contact">\address{##VAL##}
+</transform>
+</base>
