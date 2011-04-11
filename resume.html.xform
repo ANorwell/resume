@@ -1,15 +1,19 @@
 <?xml version="1.0"?>
 <base>
 
-<transform name="ContactMain"><![CDATA[
+<transform name="Contact"><![CDATA[
   <p id="bio_left">
-    ##Contact##
+    ##Email##<br/>
+    ##Phone##<br/>
   </p>
   <p id="bio_right">
-  ##Address##</p>
+    <a href="##Website##">Personal Website</a><br/>
+    <a href="##Github##">Github</a><br/>
+  </p>
 ]]></transform>
 
 <transform name="Contact"><![CDATA[##VAL## <br/>]]></transform>
+<transform name="Address"><![CDATA[##VAL## <br/>]]></transform>
 
 <transform name="Bullet"><![CDATA[<li>##VAL##</li>]]></transform>
 
@@ -39,6 +43,15 @@
 
 <transform name="Projects"><![CDATA[
   <h2>PROJECTS</h2>
+  ##Project##
+]]></transform>
+
+<transform name="Project"><![CDATA[
+  <div class="project">
+      <h4><a href="##URL##">##Name##</a></h4>
+      <p class="location"><a href="##CodeURL##">[source code]</a></p>
+        <p class="projdesc">##Description##</p>
+  </div>
 ]]></transform>
 
 </base>

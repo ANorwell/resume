@@ -5,12 +5,20 @@
 
 \begin{document}
 \name{##Name##}
-##ContactMain##
+##Contact##
  
 \begin{resume}
 
 \section{EXPERIENCE}
 ##Experience##
+
+\section{EDUCATION}
+##Education##
+
+\section{PROJECTS}
+##Projects##
+
+
 
 \end{resume}
 \end{document}

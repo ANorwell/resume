@@ -4,22 +4,23 @@
     Arron Norwell
   </section>
 
-  <section name="ContactMain">
-    <section name="Contact">
-      <entry>anorwell@gmail.com</entry>
-      <entry>647-987-3081</entry>
-    </section>
+  <section name="Contact">
+    <section name="Email">anorwell@gmail.com</section>
+    <section name="Website">http://anorwell.com</section>
+    <section name="Github">http://github.com/ANorwell</section>
+    <section name="Phone">647-987-3081</section>
     <section name="Address">
       <entry>120 Homewood Ave Suite 418</entry>
       <entry>Toronto, ON M4Y 2J3</entry>
     </section>
   </section>
 
+
   <section name="Experience">
     
     <section name="Position">
       <entry>
-        <section name="Title">Software Development Engineer in Test - Microsoft</section>
+        <section name="Title">Software Development Engineer in Test</section>
         <section name="Date">May 2009 - Aug 2010</section>
         <section name="Location">Mountain View, CA</section>
         <section name="Company">Microsoft</section>
@@ -52,12 +53,12 @@
 
         <entry>
         <section name="Company">University of British Columbia</section>
-        <section name="Date">2006-2009</section>
+        <section name="Date">2006 - 2009</section>
         <section name="Location">Vancouver, BC</section>
         <section name="URL">http://ubc.ca</section>
         <section name="Title">BS - Combined Honours, Mathematics and Computer Science</section>
         <section name="Bullet">
-          <entry>GPA: 90ish</entry>
+          <entry>GPA: 92%</entry>
         </section>
         </entry>
     </section>
@@ -78,6 +79,14 @@
         <section name="URL">http://anorwell.com/</section>
         <section name="CodeURL">https://github.com/ANorwell/website</section>
         <section name="Description">My personal website is a minimally-featured blog tool written from scratch. Implemented feature-equivalently in two versions: Ajax with a Python/MySQL backend, and PHP.  Supports upload, storage, and display of posts and music, as well as comments using Facebook's comment system. </section>
+      </entry>
+
+      <entry>
+        <section name="Name">Resume Maker</section>
+        <section name="URL">http://anorwell.com/resume/</section>
+        <section name="CodeURL">https://github.com/ANorwell/resume</section>
+        <section name="Description">A tool for creating multiple versions of a resume (or other document) by combining an Info XML file with template files that define the formatting to be applied to the info. For example, generate a latex and html version of the same resume.
+        </section>
       </entry>
 
     </section>

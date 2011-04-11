@@ -11,7 +11,7 @@ p, td, span, li, a {
 	font-family: verdana, arial, helvetica, sans-serif; 
 }
 h1 {
-	font: 90% verdana, arial, helvetica, sans-serif;
+	font-family: verdana, arial, helvetica, sans-serif;
 	font-weight: bold;
 	margin: 0 0 5px 0;
 }
@@ -32,6 +32,15 @@ h3 {
 	padding: 0;
 	width: 446px;
 }
+h4 {
+	float: left;
+	font: 80% verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 0;
+	width: 596px;
+}
+
 li {
 	font-size: 70%;
 	margin: 0 0 3px 20px;
@@ -64,6 +73,14 @@ body div ul {
 	text-align: right;
 	width: 350px;
 }
+
+.projdesc {
+    font-size: 70%;
+	margin: 0 0 10px 0;
+	padding: 0;
+	width: 675px;
+}
+
 .company {
 	clear: both;
 	margin: 0 0 5px 0;
@@ -114,7 +131,7 @@ body div ul {
 
 <h1>##Name##</h1>
 
-##ContactMain##
+##Contact##
 
 ##Experience##
 
