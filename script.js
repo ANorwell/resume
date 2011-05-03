@@ -8,7 +8,6 @@ var node_counter = 0;
 
 
 //A node represents the info of an entry.
-//The list of nodes is probably inferred
 function Node() {
     this.id  = "Node" + node_counter;
     node_counter += 1;
@@ -61,3 +60,35 @@ function makeNewElt() {
     var n = new Node();
     n.toHtmlElt( $("#exp-list") );
 }
+
+
+/////////////////////
+// FB stuff
+///////////////////////////
+
+//These variables are populated in a script tag from php
+window.fbAsyncInit = function() {
+    FB.init({
+        appId   : APP_ID,
+                session : SESSION_JSON, // don't refetch the session when PHP already has it
+                status  : true, // check login status
+                cookie  : true, // enable cookies to allow the server to access the session
+                xfbml   : true // parse XFBML
+                });
+
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+            window.location.reload();
+        });
+};
+
+/*
+(function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    $('#fb-root').append(e);
+
+
+}());
+*/
