@@ -1,11 +1,11 @@
 <?php
 
-require 'facebook-php-sdk/src/facebook.php';
+require '../facebook-php-sdk/src/facebook.php';
 
 // Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
-'appId'  => '162844173761910',
-'secret' => '3d7fc0b761fe0c19c1febb38f34727c2',
+'appId'  => '208341082530964',
+'secret' => 'ee43fb3860a6a167b0829ec299011228',
 'cookie' => true,
 ));
 
@@ -47,7 +47,7 @@ $loginUrl = $facebook->getLoginUrl();
     <script type="text/javascript">
       var OLD_API = 'https://api.facebook.com/method/';
       var APP_ID = '<?php echo $facebook->getAppId(); ?>';
-      var URL = 'http://anorwell.com/fbgraph/example.php';
+      var URL = 'http://anorwell.com/resume/index.php';
       var AUTH = 'https://www.facebook.com/dialog/oauth?response_type=token&client_id=' + APP_ID + '&redirect_uri='+ URL;
       var SESSION_JSON = '<?php echo json_encode($session); ?>';
 
@@ -69,23 +69,44 @@ $loginUrl = $facebook->getLoginUrl();
   </head>
   <body>
 
-
     
+    <!-- the facebook login button -->
+
     <?php if ($me): ?>
     <a href="<?php echo $logoutUrl; ?>">
-    <img src="http://static.ak.fbcdn.net/rsrc.php/z2Y31/hash/cxrz4k7j.gif">
+      <img src="http://static.ak.fbcdn.net/rsrc.php/z2Y31/hash/cxrz4k7j.gif">
     </a>
     <?php else: ?>
+    <div id="fb-root"></div>
+    <script src="http://connect.facebook.net/en_US/all.js#appId=208341082530964&amp;xfbml=1"></script>
+    <fb:login-button width="200" max-rows="1"></fb:login-button>
+    <script type="text/javascript">
+      window.fbAsyncInit = function() {
+    FB.init({
+        appId   : APP_ID,
+                session : SESSION_JSON, // don't refetch the session when PHP already has it
+                status  : true, // check login status
+                cookie  : true, // enable cookies to allow the server to access the session
+                xfbml   : true // parse XFBML
+                });
+
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+            window.location.reload();
+        });
+};
+    </script>
+
+    <!--
     <div>
-      Without using JavaScript &amp; XFBML:
       <a href="<?php echo $loginUrl; ?>">
-      <img src="http://static.ak.fbcdn.net/rsrc.php/zB6N8/hash/4li2k73z.gif">
+        <img src="http://static.ak.fbcdn.net/rsrc.php/zB6N8/hash/4li2k73z.gif">
       </a>
     </div>
+    -->
     <?php endif ?>
 
 
-    
     <div class="main">
 
       <h2>Experience</h2>
@@ -118,6 +139,7 @@ $loginUrl = $facebook->getLoginUrl();
 
 
         <button class="button" id="exp-button">Add New Position</button>
+
 
       </div>
     </div>

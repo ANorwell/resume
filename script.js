@@ -67,20 +67,8 @@ function makeNewElt() {
 ///////////////////////////
 
 //These variables are populated in a script tag from php
-window.fbAsyncInit = function() {
-    FB.init({
-        appId   : APP_ID,
-                session : SESSION_JSON, // don't refetch the session when PHP already has it
-                status  : true, // check login status
-                cookie  : true, // enable cookies to allow the server to access the session
-                xfbml   : true // parse XFBML
-                });
 
-    // whenever the user logs in, we refresh the page
-    FB.Event.subscribe('auth.login', function() {
-            window.location.reload();
-        });
-};
+
 
 /*
 (function() {
@@ -90,5 +78,4 @@ window.fbAsyncInit = function() {
     $('#fb-root').append(e);
 
 
-}());
-*/
+}()
