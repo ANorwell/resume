@@ -24,6 +24,10 @@
 
   <transform name='Education'>##Position##</transform>
 
+  <transform name='Publications'>
+    ##Authors##, {\sl ##Title##}. ##Paper##.  \hfill ##Date## \\
+  </transform>
+
   <transform name='Projects'>##Project##</transform>
   <transform name="Project">
 {\bf ##Name##} \hfill ##URL##
@@ -35,7 +39,8 @@
   <transform name="Bullet">\item ##VAL##</transform>
 
     <transform name="Contact">
-      \address{##Email## ##Phone##}
-      \address{##Github##}
+      \address{##Email## ##Phone## \\
+      ##Github## \\
+      ##Address## }
     </transform>
 </base>
