@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <entry>
-  <section name="Name">
-    Arron Norwell
-  </section>
+  <section name="Name">Arron Norwell</section>
 
   <section name="Contact">
+    <section name="FirstName">Arron</section>
+    <section name="LastName">Norwell</section>
     <section name="Email">anorwell@gmail.com</section>
     <section name="Website">http://anorwell.com</section>
     <section name="Github">http://github.com/ANorwell</section>
@@ -16,9 +16,9 @@
   
   <section name="Skills">
     <section name="Languages">C, C++, Python, Perl, PHP, Scheme, Elisp, Javascript, R, Matlab</section>
-    <section name="Technologies/Standards">XML + XPath, HTML + CSS2/3; HTTP, SIP, DNS; Code coverage and profiling tools; OpenGL API; Facebook API; JQuery + JQueryUI </section>
-    <section name="Tools">Git, SVN, CVS, Unix toolchain, Emacs, Vi(m), VS2010, Wireshark</section>
-  </section>
+    <section name="Techs">XML + XPath, HTML + CSS2/3; HTTP, SIP, DNS; Code coverage and profiling tools; OpenGL API; Facebook API; JQuery + JQueryUI </section>
+    <section name="Tools">Git, SVN, CVS, Unix toolchain, Emacs, Vi(m), VS2010, Wireshark, </section>
+  </section> 
 
   <section name="Publications">
     <entry>
@@ -26,7 +26,7 @@
       <section name="Authors">Arron Norwell</section>
       <section name="URL">http://anorwell.com</section>
       <section name="Date">2011</section>
-      <section name="Paper">Submitted</section>
+      <section name="Paper">To Be Submitted</section>
     </entry>
   </section>
 
@@ -103,29 +103,28 @@
     <section name="Project">
       <entry>
         <section name="Name">Graph.js (2011)</section>
-        <section name="URL">http://anorwell.com/graph/</section>
+        <section name="URL">http://anorwell.com/graph</section>
         <section name="CodeURL">https://github.com/ANorwell/graph</section>
         <section name="Description">A Javascript Graph creation and visualization API using HTML 5 Canvas. Allows for flexible appearance.  The example app created using this API allows users to draw and save (to MySQL DB) graphs, and then share them via URL. </section>
       </entry>
 
       <entry>
         <section name="Name">Website (2010-11)</section>
-        <section name="URL">http://anorwell.com/</section>
+        <section name="URL">http://anorwell.com</section>
         <section name="CodeURL">https://github.com/ANorwell/website</section>
         <section name="Description">My personal website is a minimally-featured blog tool written from scratch. Implemented feature-equivalently in two versions: Ajax with a Python/MySQL backend, and PHP.  Supports upload, storage, and display of posts and music, as well as comments using Facebook's comment system. </section>
       </entry>
 
       <entry>
         <section name="Name">Resume Maker (2011)</section>
-        <section name="URL">http://anorwell.com/resume/</section>
+        <section name="URL">http://anorwell.com/resume</section>
         <section name="CodeURL">https://github.com/ANorwell/resume</section>
-        <section name="Description">A tool for creating multiple versions of a resume (or other document) by combining an Info XML file with template files that define the formatting to be applied to the info. For example, generate a latex and html version of the same resume. HTML/JS front-end to a perl
-        </section>
+        <section name="Description">A tool for creating multiple versions of a resume (or other document) by combining an Info XML file with template files that define the formatting to be applied to the info. For example, generate a latex and html version of the same resume. HTML/JS front-end to a perl backend.</section>
       </entry>
 
       <entry>
         <section name="Name">English/Transliterated Persian Translator</section>
-        <section name="URL">http://anorwell.com/engping/</section>
+        <section name="URL">http://anorwell.com/engping</section>
         <section name="CodeURL">https://github.com/ANorwell/engping</section>
         <section name="Description">A web (JS + HTML) tool for translating from English to Transliterated Persian, or vice versa, using various google language APIs.</section>
       </entry>
@@ -134,8 +133,7 @@
         <section name="Name">Graphics (2009)</section>
         <section name="URL">https://github.com/ANorwell/graphics</section>
         <section name="CodeURL">https://github.com/ANorwell/graphics</section>
-        <section name="Description">An implementation of some graphics algorithms and design patterns in C++ and using OpenGL/GLSL. Includes a surface subdivision algorithm that acting on an implementation of half-edge data structure, a scene manager, shader manager, quaternion camera, hit detection, and small shader library including a Phong shader. Compiles to a program with a game-like interface in which you can fly around graphics scenes.
-        </section>
+        <section name="Description">An implementation of some graphics algorithms and design patterns in C++ and using OpenGL/GLSL. Includes a surface subdivision algorithm that acting on an implementation of half-edge data structure, a scene manager, shader manager, quaternion camera, hit detection, and small shader library including a Phong shader. Compiles to a program with a game-like interface in which you can fly around graphics scenes.</section>
       </entry>  
 
     </section>
