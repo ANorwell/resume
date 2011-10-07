@@ -1,0 +1,48 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[black]{classic}
+
+\usepackage[utf8]{inputenc}
+
+% personal data
+##Contact##
+
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+\definecolor{web}{rgb}{0.2,0.2,0.2}
+%\definecolor{web}{rgb}{0.5,0.5,0.5}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{\textbf{Education}}
+##Education##
+
+
+\section{\textbf{Experience}}
+##Experience##
+
+\section{\textbf{Projects}}
+##Projects##
+
+\section{\textbf{Skills}}
+##Skills##
+
+\section{\textbf{Scientific Interests}}
+\cvlistitem{Statistical Learning}
+\cvlistitem{Time Series Analysis}
+\cvlistitem{Spatial Statistics}
+\cvlistitem{Stochastic Process}
+\cvlistitem{Data/Text Mining}
+%\cvlistitem{Boundary Value Problems}
+%\cvlistitem{Numerical Analysis}
+%\cvlistitem{Parallel Computing}
+\end{document}

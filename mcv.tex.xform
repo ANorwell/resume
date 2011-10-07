@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<base>
+  <transform name='Experience'>##Position##</transform>
+  <transform name="Position">
+  \cventry{##Date##}{\textbf{##Title##}}{}{##Company##}{}
+{ \begin{itemize} \itemsep -2pt
+  ##Bullet##
+\end{itemize} }
+  </transform>
+
+  <transform name="PositionOld">
+    \title{##Title##}
+    \dates{##Date##}
+    \employer{##Company##}
+    \location{##Location##}
+    \begin{position}
+    \begin{itemize}  \itemsep -2pt % reduce space between items
+    ##Bullet##
+    \end{itemize}
+    \end{position}
+  </transform>
+
+  <transform name="Skills">
+  \cvline{Languages}{##Languages##}
+  \cvline{Technologies/Standards}{##Techs##}
+  \cvline{Tools}{##Tools##, \LaTeX}
+</transform>
+
+  <transform name='Education'>##Position##</transform>
+
+  <transform name='Publications'>
+    ##Authors##, {\sl ##Title##}. ##Paper##.  \hfill ##Date## \\
+  </transform>
+
+  <transform name='Projects'>##Project##</transform>
+
+  <transform name="Project">
+\cventry{}{\textbf{##Name##}}{##URL##}{}{}{##Description##}
+  </transform>
+
+  <transform name="Bullet">\item ##VAL##</transform>
+
+    <transform name="Contact">
+% personal data
+\firstname{##FirstName##}
+\familyname{##LastName##}
+%\address{Office 719 SEO\\ 851 S. Morgan St.}{Chicago, IL}
+\extrainfo{##Address## \\ ##Website## \\ ##Github##}
+\phone{##Phone##}
+\email{##Email##}
+    </transform>
+</base>
