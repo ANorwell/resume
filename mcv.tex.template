@@ -9,7 +9,7 @@
 
 \newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}
 
-% the ConTeXt symbol
+ % the ConTeXt symbol
 \def\ConTeXt{%
   C%
   \kern-.0333emo%
