@@ -1,7 +1,8 @@
-#!/usr/local/bin/perl
+#!/usr/bin/perl
 use warnings;
 use strict;
 use XML::LibXML;
+use JSON;
 
 our $LOGLEVEL = 0;
 our $DELIM = '##';
@@ -13,25 +14,36 @@ our $SECTION_NO_NAME = 'VAL';
 
 our ($INFO, $TEMPLATE, $TRANSFORM) = @ARGV;
 
-my $base_entry = openRoot($INFO);
-my $transform = openRoot($TRANSFORM);
+my $rb = ResumeBuilder->new($TRANSFORM, $TEMPLATE);
+print $rb->processEntry($rb->{template}, ResumeBuilder::openRoot($INFO));
 
-#slurp the template-file to a variable
-my $template;
-{
-    open my $fh, '<', $TEMPLATE || die "template $TEMPLATE missing: $!";
-    local $/;
-    $template = <$fh>;
-    close $fh;
+package ResumeBuilder;
+
+sub new {
+    my $class = shift;
+    my ($transform_file, $template_file) = @_;
+    my $self;
+
+    #slurp the template-file to a variable
+    my $template;
+    {
+        open my $fh, '<', $template_file || die "template $template_file missing: $!";
+        local $/;
+        $template = <$fh>;
+        close $fh;
+    }
+
+    $self->{transform_map} = openRoot($transform_file);
+    $self->{template}= $template; 
+    bless $self, $class;
 }
 
-print processEntry($template, $transform, $base_entry);
-
 #Given a template containing ##name## variables to be resolved,
-#and $root, an entry
+#and $info_root, the root of the info file used to populate the template,
+#returns the template with template variables replaced with the info
 sub processEntry {
-    my ($template, $transform_map, $root) = @_;
-
+    my ($self, $template, $info_root) = @_;
+    
     while ($template =~ m/$DELIM(\w+)$DELIM/) {
         my $sec_name = $1;
         logg(1, "found var $sec_name in template");
@@ -41,18 +53,18 @@ sub processEntry {
         #bug: may not play nice if ##VAL## coexists in template with
         #other variables.
         if ($sec_name eq $SECTION_NO_NAME) {
-            my $v = $root->textContent;
+            my $v = $self->getText($info_root);
             $template =~ s/$DELIM$sec_name$DELIM/$v/g;
             next;
         }
 
-        my @sections = getNamedSections($root,$sec_name);
+        my @sections = $self->getNamedSections($info_root,$sec_name);
         unless (@sections) {
             die "$sec_name does not resolve to anything in: $template\n";
         }
 
         foreach my $sec (@sections) {
-            my $section_value = processSection($sec, $sec_name, $transform_map);
+            my $section_value = $self->processSection($sec, $sec_name);
             $template =~ s/$DELIM$sec_name$DELIM/$section_value/;
         }
     }
@@ -61,49 +73,56 @@ sub processEntry {
 
 #Given a section ##NAME##, gets the resolved value of that section.
 sub processSection {
-    my ($sec, $sec_name, $transform_map) = @_;
+    my ($self, $sec, $sec_name) = @_;
     my $section_value = '';
 
-    foreach my $entry (getEntries($sec)) {
+    foreach my $entry ($self->getEntries($sec)) {
 
         #apply transform, if there is one
-        my $trans = getTransform($transform_map, $sec_name);
+        my $trans = $self->getTransform($sec_name);
 
         if ($trans) {
             #Recursively resolve the transformed section, using only
             #The sections contained in this entry.
             logg(1, "transform is $trans");
             logg(1, "Doing recursive lookup an entry for $sec_name");
-            $section_value .= processEntry($trans, $transform_map, $entry);
+            $section_value .= $self->processEntry($trans, $entry);
         } else {
             #Base case: no transforms, so just replace the var with
             #all the entries.
-            $section_value .= $entry->textContent;
+            $section_value .= $self->getText($entry);
             logg(1, "Base case: entry is $section_value");
         }
     }
     return $section_value;
 }
 
-#Returns the libxml2 root object for the provided XMl file.
-sub openRoot {
-    my $file = shift;
-    my $parser = XML::LibXML->new();
-    my $doc = $parser->load_xml(location => $file);
-    my $root = $doc->documentElement();
-    logg(1, "Opening root " . $root->nodeName);
-    return $root;
+sub logg {
+    my ($level, $msg) = @_;
+    if ($level <= $LOGLEVEL) {
+        print STDERR "LOG:", $msg, "\n";
+    }
 }
+
+###Abstract
+sub getNamedSections;
+sub getEntries;
+sub openRoot;
+sub getTransform;
+sub getText;
+
+###XML versions
+
 
 #Given a node in a section tree, returns the sections of the given name
 sub getNamedSections {
-    my ($root, $name) = @_;
+    my ($self, $info_root, $name) = @_;
     return grep {$_->getAttribute('name') eq $name }
-      $root->getChildrenByTagName('section')
+      $info_root->getChildrenByTagName('section')
 }
 
 sub getEntries {
-    my $node = shift;
+    my ($self, $node) = @_;
     my @entries = $node->getChildrenByTagName('entry'); ;
 
     #If there is only a single entry, then the entry tag maybe omitted. We may
@@ -114,9 +133,9 @@ sub getEntries {
 }
 
 sub getTransform {
-    my ($root, $name) = @_;
+    my ($self, $name) = @_;
     my @trans = grep {$_->getAttribute('name') eq $name }
-      $root->getChildrenByTagName('transform');
+      $self->{transform_map}->getChildrenByTagName('transform');
 
     if (@trans) {
         return $trans[0]->textContent;
@@ -124,9 +143,19 @@ sub getTransform {
     return 0;
 }
 
-sub logg {
-    my ($level, $msg) = @_;
-    if ($level <= $LOGLEVEL) {
-        print STDERR "LOG:", $msg, "\n";
-    }
+
+sub getText {
+    my ($self, $obj) = @_;
+    return $obj->textContent;
+};
+
+#Helper function
+#Returns the libxml2 root object for the provided XMl file.
+sub openRoot {
+    my $file = shift;
+    my $parser = XML::LibXML->new();
+    my $doc = $parser->load_xml(location => $file);
+    my $root = $doc->documentElement();
+    logg(1, "Opening root " . $root->nodeName);
+    return $root;
 }

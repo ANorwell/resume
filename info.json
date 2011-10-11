@@ -1,0 +1,19 @@
+[ { "Name" : "Arron Norwell"
+  },
+  { "Contact" :
+    [ { "Email" : "anorwell@gmail.com" }
+      { "Website" : "http://anorwell.com" }
+      { "Github" : "http://github.com/ANorwell" }
+      { "Phone" : "123" }
+      { "Address" : [ "120 Homewood Ave Suite 418", "Toronto, ON M4Y
+      2J3" ] }
+    ]
+  },
+
+  { "Experience" :
+    [ { "Position" :
+        [ { "Title" : "SDET"  },
+          { "Date" : "May" } ] } ]
+  }
+
+]
