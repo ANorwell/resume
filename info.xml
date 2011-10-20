@@ -6,8 +6,8 @@
     <section name="FirstName">Arron</section>
     <section name="LastName">Norwell</section>
     <section name="Email">anorwell@gmail.com</section>
-    <section name="Website">http://anorwell.com</section>
-    <section name="Github">http://github.com/ANorwell</section>
+    <section name="Website">anorwell.com</section>
+    <section name="Github">github.com/ANorwell</section>
     <section name="Phone">647-987-3081</section>
     <section name="Address">
       <entry>Toronto, ON</entry>
@@ -17,12 +17,12 @@
   <section name="Skills">
     <section name="Languages">C, C++, Python, Perl, PHP, Scheme, Elisp, Javascript, R, Matlab</section>
     <section name="Techs">XML + XPath, HTML + CSS2/3; HTTP, SIP, DNS; Code coverage and profiling tools; OpenGL API; Facebook API; JQuery + JQueryUI </section>
-    <section name="Tools">Git, SVN, CVS, Unix toolchain, Emacs, Vi(m), VS2010, Wireshark, </section>
+    <section name="Tools">Git, SVN, CVS, Unix toolchain, Emacs, Vi(m), VS2010, Wireshark </section>
   </section> 
 
   <section name="Publications">
     <entry>
-      <section name="Title">Clustering in Real-World Random Graphs</section>
+      <section name="Title">A Threshold for Clusters in Real-World Random Networks</section>
       <section name="Authors">Arron Norwell</section>
       <section name="URL">http://anorwell.com</section>
       <section name="Date">2011</section>
@@ -45,7 +45,7 @@
           <entry>Led project to Design and implement VOIP test framework for quick and flexible creation and execution of tests, with web UI for test reporting</entry>
           <entry>Designed and implemented environment and tools for nightly builds of code and automated execution of tests against those builds</entry>
           <entry>Ran and evaluated VOIP call performance. Designed VOIP performance test execution and graphing tools.</entry>
-          <entry>Interviewed potiential new hires</entry>
+          <entry>Interviewed potiential new hires.</entry>
           <entry>Languages: Perl, C++, Javascript, Python, R</entry>
         </section>
       </entry>
@@ -64,6 +64,20 @@
         </section>
       </entry>
 
+      <entry>
+        <section name="Title">Teaching Assistant</section>
+        <section name="Date">Sept 2010 - Present</section>
+        <section name="Location">Toronto, ON</section>
+        <section name="Company">University of Toronto</section>
+        <section name="URL">http://www.utoronto.ca</section>
+        <section name="Bullet">
+          <entry>Acted as teaching assistant for second year data structures course and first year math and logic course</entry>
+          <entry>Gave tutorial lectures on selected topics to classes of students</entry>
+          <entry>Provided one-on-one office-hour guidance and instruction to students</entry>
+          <entry>Marked assignments and tests</entry>
+        </section>
+      </entry>
+
       
     </section>
   </section>
@@ -77,10 +91,11 @@
         <section name="URL">http://cs.toronto.edu/~anorwell</section>
         <section name="Title">Masters - Computer Science</section>
         <section name="Bullet">
-          <entry>Theory Group</entry>
+          <entry>Group: Theory</entry>
+          <entry>Supervisor: Mike Molloy</entry>
           <entry>GPA: A+ </entry>
-          <entry>Thesis: Clustering in Random Graph Models of Real-World Networks</entry>
-          <entry>Seminar Talks Given: Balanced Graph Partition Problems; The Diameter of a Scale-Free Graph</entry>
+          <entry>Thesis: A Threshold for Clusters in Real-World Random Networks</entry>
+          <entry>Seminar Talks Given: Balanced Graph Partition Problems; The Diameter of a Scale-Free Graph; A Threshold for Clusters in Real-World Random Networks</entry>
         </section>
       </entry>
 
@@ -105,7 +120,7 @@
         <section name="Name">Graph.js (2011)</section>
         <section name="URL">http://anorwell.com/graph</section>
         <section name="CodeURL">https://github.com/ANorwell/graph</section>
-        <section name="Description">A Javascript Graph creation and visualization API using HTML 5 Canvas. Allows for flexible appearance.  The example app created using this API allows users to draw and save (to MySQL DB) graphs, and then share them via URL. </section>
+        <section name="Description">A Javascript Graph creation and visualization API using HTML 5 Canvas. Allows for flexible appearance and manipulation of graphs.  The example app created using this API allows users to draw, save (either using HTML5 LocalStorage or to the cloud),and share their graphs. </section>
       </entry>
 
       <entry>
@@ -117,13 +132,13 @@
 
       <entry>
         <section name="Name">Resume Maker (2011)</section>
-        <section name="URL">http://anorwell.com/resume</section>
+        <section name="URL">https://github.com/ANorwell/resume</section>
         <section name="CodeURL">https://github.com/ANorwell/resume</section>
-        <section name="Description">A tool for creating multiple versions of a resume (or other document) by combining an Info XML file with template files that define the formatting to be applied to the info. For example, generate a latex and html version of the same resume. HTML/JS front-end to a perl backend.</section>
+        <section name="Description">A tool for creating multiple versions of a resume (or other document) by combining an Info XML file with template files that define the formatting to be applied to the info. For example, generate a latex and html version of the same resume. HTML/JS front-end to a perl backend. (This resume was automatically generated using this tool.)</section>
       </entry>
 
       <entry>
-        <section name="Name">English/Transliterated Persian Translator</section>
+        <section name="Name">English/Transliterated Persian Translator (2011)</section>
         <section name="URL">http://anorwell.com/engping</section>
         <section name="CodeURL">https://github.com/ANorwell/engping</section>
         <section name="Description">A web (JS + HTML) tool for translating from English to Transliterated Persian, or vice versa, using various google language APIs.</section>
