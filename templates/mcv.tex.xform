@@ -8,28 +8,16 @@
 \end{itemize} }
   </transform>
 
-  <transform name="PositionOld">
-    \title{##Title##}
-    \dates{##Date##}
-    \employer{##Company##}
-    \location{##Location##}
-    \begin{position}
-    \begin{itemize}  \itemsep -2pt % reduce space between items
-    ##Bullet##
-    \end{itemize}
-    \end{position}
-  </transform>
-
   <transform name="Skills">
   \cvline{Languages}{##Languages##}
-  \cvline{Technologies/Standards}{##Techs##}
+  \cvline{Technologies + Standards}{##Techs##}
   \cvline{Tools}{##Tools##, \LaTeX}
 </transform>
 
   <transform name='Education'>##Position##</transform>
 
   <transform name='Publications'>
-    ##Authors##, {\sl ##Title##}. ##Paper##.  \hfill ##Date## \\
+    \cventry{##Date##}{\textbf{##Title##}}{##Authors##}{}{##Paper##}{}
   </transform>
 
   <transform name='Projects'>##Project##</transform>
@@ -40,7 +28,7 @@
 
   <transform name="Bullet">\item ##VAL##</transform>
 
-    <transform name="Contact">
+  <transform name="Contact">
 % personal data
 \firstname{##FirstName##}
 \familyname{##LastName##}
@@ -48,5 +36,7 @@
 \extrainfo{##Address## \\ ##Website## \\ ##Github##}
 \phone{##Phone##}
 \email{##Email##}
-    </transform>
+  </transform>
+
+
 </base>

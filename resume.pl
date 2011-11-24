@@ -144,6 +144,8 @@ sub getTransform {
 }
 
 
+
+#BUGBUG: should escape special characters here.
 sub getText {
     my ($self, $obj) = @_;
     return $obj->textContent;

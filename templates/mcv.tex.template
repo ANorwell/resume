@@ -30,19 +30,13 @@
 \section{\textbf{Experience}}
 ##Experience##
 
-\section{\textbf{Projects}}
+\section{\textbf{Projects/Open Source}}
 ##Projects##
+
+\section{\textbf{Publications}}
+##Publications##
 
 \section{\textbf{Skills}}
 ##Skills##
 
-\section{\textbf{Scientific Interests}}
-\cvlistitem{Statistical Learning}
-\cvlistitem{Time Series Analysis}
-\cvlistitem{Spatial Statistics}
-\cvlistitem{Stochastic Process}
-\cvlistitem{Data/Text Mining}
-%\cvlistitem{Boundary Value Problems}
-%\cvlistitem{Numerical Analysis}
-%\cvlistitem{Parallel Computing}
 \end{document}

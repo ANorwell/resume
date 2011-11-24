@@ -1,0 +1,91 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[black]{classic}
+
+\usepackage[utf8]{inputenc}
+
+% personal data
+
+% personal data
+\firstname{Arron}
+\familyname{Norwell}
+%\address{Office 719 SEO\\ 851 S. Morgan St.}{Chicago, IL}
+\extrainfo{Toronto, ON \\ anorwell.com \\ github.com/ANorwell}
+\phone{647-987-3081}
+\email{anorwell@gmail.com}
+  
+
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}
+
+ % the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+\definecolor{web}{rgb}{0.2,0.2,0.2}
+%\definecolor{web}{rgb}{0.5,0.5,0.5}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{\textbf{Education}}
+
+  \cventry{Sept 2010 - Present}{\textbf{Masters - Computer Science}}{}{University of Toronto}{}
+{ \begin{itemize} \itemsep -2pt
+  \item Group: Theory\item Supervisor: Mike Molloy\item GPA: A+ \item Thesis: A Threshold for Clusters in Real-World Random Networks\item Seminar Talks Given: Balanced Graph Partition Problems; The Diameter of a Scale-Free Graph; A Threshold for Clusters in Real-World Random Networks
+\end{itemize} }
+  
+  \cventry{2006 - 2009}{\textbf{BS - Combined Honours, Mathematics and Computer Science}}{}{University of British Columbia}{}
+{ \begin{itemize} \itemsep -2pt
+  \item GPA: 92\item Courses: Computer Graphics, AI, Programming Languages, Software Engineering, Advanced Algorithms, Numerical Methods for PDEs, Compilers and Interpreters 
+\end{itemize} }
+  
+
+
+\section{\textbf{Experience}}
+
+  \cventry{May 2009 - Aug 2010}{\textbf{Software Development Engineer in Test}}{}{Microsoft}{}
+{ \begin{itemize} \itemsep -2pt
+  \item Engineered tests for VOIP platform infrastructure used by large corporate clients to handle thousands of calls per day\item Led project to Design and implement VOIP test framework for quick and flexible creation and execution of tests, with web UI for test reporting\item Designed and implemented environment and tools for nightly builds of code and automated execution of tests against those builds\item Ran and evaluated VOIP call performance. Designed VOIP performance test execution and graphing tools.\item Interviewed potiential new hires.\item Languages: Perl, C++, Javascript, Python, R
+\end{itemize} }
+  
+  \cventry{May 2008 - Aug 2008}{\textbf{Software Development Engineer in Test Intern}}{}{Tellme Networks}{}
+{ \begin{itemize} \itemsep -2pt
+  \item Designed and implemented test automation framework for back-end VOIP system\item Developed various automated test utilities\item Worked in conjunction with developers to find, test, and resolve bugs\item Languages: Perl, C++, Makefile
+\end{itemize} }
+  
+  \cventry{Sept 2010 - Present}{\textbf{Teaching Assistant}}{}{University of Toronto}{}
+{ \begin{itemize} \itemsep -2pt
+  \item Acted as teaching assistant for second year data structures course and first year math and logic course\item Gave tutorial lectures on selected topics to classes of students\item Provided one-on-one office-hour guidance and instruction to students\item Marked assignments and tests
+\end{itemize} }
+  
+
+\section{\textbf{Projects/Open Source}}
+
+\cventry{}{\textbf{Graph.js (2011)}}{http://anorwell.com/graph}{}{}{A Javascript Graph creation and visualization API using HTML 5 Canvas. Allows for flexible appearance and manipulation of graphs.  The example app created using this API allows users to draw, save (either using HTML5 LocalStorage or to the cloud),and share their graphs. }
+  
+\cventry{}{\textbf{Website (2010-11)}}{http://anorwell.com}{}{}{My personal website is a minimally-featured blog tool written from scratch. Implemented feature-equivalently in two versions: Ajax with a Python/MySQL backend, and PHP.  Supports upload, storage, and display of posts and music, as well as comments using Facebook's comment system. }
+  
+\cventry{}{\textbf{Resume Maker (2011)}}{https://github.com/ANorwell/resume}{}{}{A tool for creating multiple versions of a resume (or other document) by combining an Info XML file with template files that define the formatting to be applied to the info. For example, generate a latex and html version of the same resume. HTML/JS front-end to a perl backend. (This resume was automatically generated using this tool.)}
+  
+\cventry{}{\textbf{English/Transliterated Persian Translator (2011)}}{http://anorwell.com/engping}{}{}{A web (JS + HTML) tool for translating from English to Transliterated Persian, or vice versa, using various google language APIs.}
+  
+\cventry{}{\textbf{Graphics (2009)}}{https://github.com/ANorwell/graphics}{}{}{An implementation of some graphics algorithms and design patterns in C++ and using OpenGL/GLSL. Includes a surface subdivision algorithm that acting on an implementation of half-edge data structure, a scene manager, shader manager, quaternion camera, hit detection, and small shader library including a Phong shader. Compiles to a program with a game-like interface in which you can fly around graphics scenes.}
+  
+
+\section{\textbf{Publications}}
+
+    \cventry{2011}{\textbf{A Threshold for Clusters in Real-World Random Networks}}{Arron Norwell}{}{To Be Submitted}{}
+  
+
+\section{\textbf{Skills}}
+
+  \cvline{Languages}{C, C++, Python, Perl, PHP, Scheme, Elisp, Javascript, R, Matlab}
+  \cvline{Technologies + Standards}{XML + XPath, HTML + CSS2/3; HTTP, SIP, DNS; Code coverage and profiling tools; OpenGL API; Facebook API; JQuery + JQueryUI }
+  \cvline{Tools}{Git, SVN, CVS, Unix toolchain, Emacs, Vi(m), VS2010, Wireshark , \LaTeX}
+
+
+\end{document}
