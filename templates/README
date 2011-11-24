@@ -1,0 +1,4 @@
+These files are template files used to generate resumes using the
+resume.pl script. They are not intended to be interacted with
+directly; use the makefile in the parent directory to generate
+resumes. 
