@@ -15,8 +15,8 @@
   </section>
   
   <section name="Skills">
-    <section name="Languages">C, C++, Python, Perl, PHP, Scheme, Elisp, Javascript, R, Matlab</section>
-    <section name="Techs">XML + XPath, HTML + CSS2/3; HTTP, SIP, DNS; Code coverage and profiling tools; OpenGL API; Facebook API; JQuery + JQueryUI </section>
+    <section name="Languages">C, C++, Java, Python, Ruby, Perl, PHP, Scheme, Elisp, Javascript, R, Matlab</section>
+    <section name="Techs">XML + XPath, HTML5 + CSS2/3; HTTP, SIP, DNS; Code coverage and profiling tools; OpenGL API; Facebook API; JQuery + JQueryUI; Ruby on Rails </section>
     <section name="Tools">Git, SVN, CVS, Unix toolchain, Emacs, Vi(m), VS2010, Wireshark </section>
   </section> 
 
@@ -26,7 +26,7 @@
       <section name="Authors">Arron Norwell</section>
       <section name="URL">http://anorwell.com</section>
       <section name="Date">2011</section>
-      <section name="Paper">To Be Submitted</section>
+      <section name="Paper">In Submission</section>
     </entry>
   </section>
 
@@ -44,7 +44,7 @@
           <entry>Engineered tests for VOIP platform infrastructure used by large corporate clients to handle thousands of calls per day</entry>
           <entry>Led project to Design and implement VOIP test framework for quick and flexible creation and execution of tests, with web UI for test reporting</entry>
           <entry>Designed and implemented environment and tools for nightly builds of code and automated execution of tests against those builds</entry>
-          <entry>Ran and evaluated VOIP call performance. Designed VOIP performance test execution and graphing tools.</entry>
+          <entry>Designed and executed tests to evaluate VOIP call performance. Created graphing tools for visualization of performance data.</entry>
           <entry>Interviewed potiential new hires.</entry>
           <entry>Languages: Perl, C++, Javascript, Python, R</entry>
         </section>
@@ -93,7 +93,7 @@
         <section name="Bullet">
           <entry>Group: Theory</entry>
           <entry>Supervisor: Mike Molloy</entry>
-          <entry>GPA: A+ </entry>
+          <entry>GPA: A/A+ </entry>
           <entry>Thesis: A Threshold for Clusters in Real-World Random Networks</entry>
           <entry>Seminar Talks Given: Balanced Graph Partition Problems; The Diameter of a Scale-Free Graph; A Threshold for Clusters in Real-World Random Networks</entry>
         </section>
