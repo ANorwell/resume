@@ -34,6 +34,22 @@
   <section name="Experience">
     
     <section name="Position">
+
+      <entry>
+        <section name="Title">Teaching Assistant</section>
+        <section name="Date">Sept 2010 - Present</section>
+        <section name="Location">Toronto, ON</section>
+        <section name="Company">University of Toronto</section>
+        <section name="URL">http://www.utoronto.ca</section>
+        <section name="Bullet">
+          <entry>Acted as teaching assistant for second year data structures course and first year math and logic course</entry>
+          <entry>Gave tutorial lectures on selected topics to classes of students</entry>
+          <entry>Provided one-on-one office-hour guidance and instruction to students</entry>
+          <entry>Marked assignments and tests</entry>
+        </section>
+      </entry>
+
+      
       <entry>
         <section name="Title">Software Development Engineer in Test</section>
         <section name="Date">May 2009 - Aug 2010</section>
@@ -64,17 +80,17 @@
         </section>
       </entry>
 
+
       <entry>
-        <section name="Title">Teaching Assistant</section>
-        <section name="Date">Sept 2010 - Present</section>
-        <section name="Location">Toronto, ON</section>
-        <section name="Company">University of Toronto</section>
-        <section name="URL">http://www.utoronto.ca</section>
+        <section name="Title">Intern</section>
+        <section name="Date">May 2007 - Aug 207</section>
+        <section name="Location">Vancouver, BC</section>
+        <section name="Company">BC Wildlife Federation</section>
+        <section name="URL">http://bcwf.bc.ca</section>
         <section name="Bullet">
-          <entry>Acted as teaching assistant for second year data structures course and first year math and logic course</entry>
-          <entry>Gave tutorial lectures on selected topics to classes of students</entry>
-          <entry>Provided one-on-one office-hour guidance and instruction to students</entry>
-          <entry>Marked assignments and tests</entry>
+          <entry>Provided Database Support and Database Programming</entry>
+          <entry>Implemented Features and User Interface for in-house client tracking app</entry>
+          <entry>Provided IT and Networking Support</entry>
         </section>
       </entry>
 
