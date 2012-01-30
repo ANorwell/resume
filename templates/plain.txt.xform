@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<base>
+  <transform name='Experience'>##Position##</transform>
+  <transform name="Position">  ##Date##: ##Title## (##Company##)
+  ##Bullet##          
+</transform>
+
+  <transform name="Skills">  Languages: ##Languages##
+  Technologies + Standards: ##Techs##
+  Tools: ##Tools##
+</transform>
+
+  <transform name='Education'>##Position##</transform>
+
+  <transform name='Publications'>  ##Date##: "##Title##", ##Authors##; ##Paper##
+  </transform>
+
+  <transform name='Projects'>##Project##</transform>
+
+  <transform name="Project">  ##Name## - ##URL##
+    ##Description##
+
+</transform>
+
+  <transform name="Bullet">-##VAL##
+  </transform>
+
+  <transform name="Contact">
+##FirstName## ##LastName##
+##Address##
+##Website##
+##Github##
+##Phone##
+##Email##
+  </transform>
+
+
+</base>
