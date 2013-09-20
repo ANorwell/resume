@@ -1,8 +1,10 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper,sans]{moderncv}
 
-\moderncvtheme[black]{classic}
+\moderncvtheme[blue]{classic}
 
 \usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.8, top=2cm, bottom=1cm]{geometry}
 
 % personal data
 ##Contact##
@@ -23,20 +25,27 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-\section{\textbf{Education}}
-##Education##
 
+\section{\textbf{Summary}}
+##Summary##
+
+\section{\textbf{Skills}}
+##Proficiencies##
+%\subsection{\textbf{Languages}}
+##Languages##
 
 \section{\textbf{Experience}}
 ##Experience##
 
-\section{\textbf{Projects/Open Source}}
+\section{\textbf{Education}}
+##Education##
+
+\section{\textbf{Selected Projects/Open Source}}
 ##Projects##
+
 
 \section{\textbf{Publications}}
 ##Publications##
 
-\section{\textbf{Skills}}
-##Skills##
 
 \end{document}

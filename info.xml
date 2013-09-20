@@ -13,12 +13,44 @@
       <entry>Toronto, ON</entry>
     </section>
   </section>
+
+  <section name="Summary">
+    <section name="SummaryItem">
+      A results-oriented developer with proven experience designing and building robust, scalable, and concurrent backend software. Expertise with distributed computing, SQL and no-SQL database application development, and performance optimization. Experience leading teams and managing important projects that were delivered successfully and on-time.
+    </section>
+  </section>
+
+  <section name="Proficiencies">
+    <section name="Bullet">
+      \cvlistdoubleitem{HTTP REST APIs (XML, JSON)}
+                       {Agile (Scrum, TDD, BDD)}
+      \cvlistdoubleitem{Relational DBs (Postgres, MySQL)}
+                       {No-SQL (Redis, MongoDB, Varnish)}
+      \cvlistdoubleitem{Distributed Systems (ZeroMQ, Zookeeper)}
+                       {Cloud Applications (AWS)}
+      \cvlistdoubleitem{ Version Control Systems (git, SVN)}
+                       { Build Tools (Make, maven, sbt) }
+      \cvlistdoubleitem{ Scalability and Performance Optimization }
+                       {HTML5 + CSS; JS Frameworks }
+    </section>
+      
+    <section name="Items">
+      \cvlistdoubleitem{HTTP REST APIs (XML, JSON)}
+                       {Agile (Scrum, TDD, BDD)}
+      \cvlistdoubleitem{Relational DBs (Postgres, MySQL)}
+                       {No-SQL (Redis, MongoDB, Varnish)}
+      \cvlistdoubleitem{Distributed Systems (ZeroMQ, Zookeeper)}
+                       {Cloud Applications (AWS)}
+      \cvlistdoubleitem{ Version Control Systems (git, SVN)}
+                       { Build Tools (Make, maven, sbt) }
+      \cvlistdoubleitem{ Scalability and Performance Optimization }
+                       {HTML5 + CSS; JS Frameworks }
+    </section>
+  </section>
   
-  <section name="Skills">
-    <section name="Languages">C, C++, Java, Python, Ruby, Perl, PHP, Scheme, Elisp, Javascript, R, Matlab</section>
-    <section name="Techs">XML + XPath, HTML5 + CSS2/3; HTTP, SIP, DNS; Code coverage and profiling tools; OpenGL API; Facebook API; JQuery + JQueryUI; Ruby on Rails </section>
-    <section name="Tools">Git, SVN, CVS, Unix toolchain, Emacs, Vi(m), VS2010, Wireshark </section>
-  </section> 
+  <section name="Languages">
+    <section name="Languages1">Java, Scala, C, C++, Ruby, Javascript, Perl, Python, elisp, clojure, Go, R, Matlab</section>
+  </section>
 
   <section name="Publications">
     <entry>
@@ -36,20 +68,22 @@
     <section name="Position">
 
       <entry>
-        <section name="Title">Teaching Assistant</section>
-        <section name="Date">Sept 2010 - Present</section>
+        <section name="Title">Software Developer / Team Lead</section>
+        <section name="Date">Apr 2012 - Present</section>
         <section name="Location">Toronto, ON</section>
-        <section name="Company">University of Toronto</section>
-        <section name="URL">http://www.utoronto.ca</section>
+        <section name="Company">mDialog</section>
+        <section name="URL">http://mdialog.com</section>
         <section name="Bullet">
-          <entry>Acted as teaching assistant for second year data structures course and first year math and logic course</entry>
-          <entry>Gave tutorial lectures on selected topics to classes of students</entry>
-          <entry>Provided one-on-one office-hour guidance and instruction to students</entry>
-          <entry>Marked assignments and tests</entry>
+          <entry>Designed and implemented components of a distributed, asynchronous, and highly scalable video streaming platform built in Scala, Java, and C, using Redis, PostgreSQL, Apache Zookeeper, and ZeroMQ.</entry>
+          <entry>As project lead, worked with another developer to deliver a multiple-component project successfully and on-time to a large external client; acted as external-facing technical point of contact for that product.</entry>
+          <entry>Supervised teams of one to two other developers during two week Agile sprints, responsible for creating new applications and adding features to new applications.</entry>
+          <entry>Horizontally and vertically scaled software platform from zero users to over 250,000 concurrent video streams running on clusters of over fifty machines; designed software components proven to scale vertially to thousands of requests per second.</entry>
+          <entry>Analyzed, profiled, and created tools for visualizing the performance of Java Virtual Machine (JVM) applications.</entry>
+          <entry>Open-sourced several internally-developed Scala libraries, including an asynchronous Redis client, an asynchronous HTTP client and server, and a ZeroMQ library.</entry>
+          <entry>Interviewed potential new hires and participated in code reviews.</entry>
         </section>
       </entry>
 
-      
       <entry>
         <section name="Title">Software Development Engineer in Test</section>
         <section name="Date">May 2009 - Aug 2010</section>
@@ -76,14 +110,26 @@
           <entry>Designed and implemented test automation framework for back-end VOIP system</entry>
           <entry>Developed various automated test utilities</entry>
           <entry>Worked in conjunction with developers to find, test, and resolve bugs</entry>
-          <entry>Languages: Perl, C++, Makefile</entry>
         </section>
       </entry>
 
+      <entry>
+        <section name="Title">Teaching Assistant</section>
+        <section name="Date">Sept 2010 - Dec 2012</section>
+        <section name="Location">Toronto, ON</section>
+        <section name="Company">University of Toronto</section>
+        <section name="URL">http://www.utoronto.ca</section>
+        <section name="Bullet">
+          <entry>Acted as teaching assistant for second year data structures course and first year math and logic course</entry>
+          <entry>Gave tutorial lectures on selected topics to classes of students</entry>
+          <entry>Provided one-on-one office-hour guidance and instruction to students</entry>
+        </section>
+      </entry>
 
+     
       <entry>
         <section name="Title">Intern</section>
-        <section name="Date">May 2007 - Aug 207</section>
+        <section name="Date">May 2007 - Aug 2007</section>
         <section name="Location">Vancouver, BC</section>
         <section name="Company">BC Wildlife Federation</section>
         <section name="URL">http://bcwf.bc.ca</section>
@@ -102,13 +148,12 @@
     <section name="Position">
       <entry>
         <section name="Company">University of Toronto</section>
-        <section name="Date">Sept 2010 - Present</section>
+        <section name="Date">Sept 2010 - Feb 2012</section>
         <section name="Location">Toronto, ON</section>
         <section name="URL">http://cs.toronto.edu/~anorwell</section>
         <section name="Title">Masters - Computer Science</section>
         <section name="Bullet">
-          <entry>Group: Theory</entry>
-          <entry>Supervisor: Mike Molloy</entry>
+          <entry>Supervisor: Mike Molloy (Theory Group)</entry>
           <entry>GPA: 4.0 </entry>
           <entry>Thesis: A Threshold for Clusters in Real-World Random Networks</entry>
           <entry>Seminar Talks Given: Balanced Graph Partition Problems; The Diameter of a Scale-Free Graph; A Threshold for Clusters in Real-World Random Networks</entry>
@@ -133,35 +178,49 @@
   <section name="Projects">
     <section name="Project">
       <entry>
-        <section name="Name">Graph.js (2011)</section>
-        <section name="URL">http://anorwell.com/graph</section>
-        <section name="CodeURL">https://github.com/ANorwell/graph</section>
-        <section name="Description">A Javascript Graph creation and visualization API using HTML 5 Canvas. Allows for flexible appearance and manipulation of graphs.  The example app created using this API allows users to draw, save (either using HTML5 LocalStorage or to the cloud),and share their graphs. </section>
+        <section name="Name">Stieltjes (2013 - Personal Project)</section>
+        <section name="URL">http://github.com/ANorwell/stieltjes</section>
+        <section name="CodeURL">https://github.com/ANorwell/stieltjes</section>
+        <section name="Description">A minimal, asynchronous UDP-based Scala cleint for Riemann, the distributed application monitoring system. </section>
       </entry>
 
       <entry>
-        <section name="Name">Website (2010-11)</section>
+        <section name="Name">Website (2010-13 - Personal Project)</section>
         <section name="URL">http://anorwell.com</section>
         <section name="CodeURL">https://github.com/ANorwell/website</section>
         <section name="Description">My personal website is a minimally-featured blog tool written from scratch. Implemented feature-equivalently in two versions: Ajax with a Python/MySQL backend, and PHP.  Supports upload, storage, and display of posts and music, as well as comments using Facebook's comment system. </section>
       </entry>
 
       <entry>
-        <section name="Name">Resume Maker (2011)</section>
+        <section name="Name">Brando (2013 - Contributor)</section>
+        <section name="URL">http://github.com/chrisdinn/brando</section>
+        <section name="CodeURL">https://github.com/chrisdinn/brando</section>
+        <section name="Description">An Akka-based Redis client in Scala; supports sharding and pipelining.</section>
+      </entry>
+
+      <entry>
+        <section name="Name">InterviewStreet (2012 - Personal Project)</section>
+        <section name="URL">http://github.com/ANorwell/InterviewStreet</section>
+        <section name="CodeURL">https://github.com/ANorwell/InterviewStreet</section>
+        <section name="Description">Implementations of solutions to various InterviewStreet coding problems. Several interesting graphing and network algorithms; implemented in Ruby and C. </section>
+      </entry>
+
+      <entry>
+        <section name="Name">Graph.js (2011-12 - Personal Project)</section>
+        <section name="URL">http://anorwell.com/graph</section>
+        <section name="CodeURL">https://github.com/ANorwell/graph</section>
+        <section name="Description">A Javascript Graph creation and visualization API using HTML 5 Canvas. Allows for flexible appearance and manipulation of graphs.  The example app created using this API allows users to draw, save (either using HTML5 LocalStorage or to the cloud),and share their graphs. </section>
+      </entry>
+
+      <entry>
+        <section name="Name">Resume Maker (2012 - Personal Project)</section>
         <section name="URL">https://github.com/ANorwell/resume</section>
         <section name="CodeURL">https://github.com/ANorwell/resume</section>
         <section name="Description">A tool for creating multiple versions of a resume (or other document) by combining an Info XML file with template files that define the formatting to be applied to the info. For example, generate a latex and html version of the same resume. HTML/JS front-end to a perl backend. (This resume was automatically generated using this tool.)</section>
       </entry>
 
-      <entry>
-        <section name="Name">English/Transliterated Persian Translator (2011)</section>
-        <section name="URL">http://anorwell.com/engping</section>
-        <section name="CodeURL">https://github.com/ANorwell/engping</section>
-        <section name="Description">A web (JS + HTML) tool for translating from English to Transliterated Persian, or vice versa, using various google language APIs.</section>
-      </entry>
-
       <entry> 
-        <section name="Name">Graphics (2009)</section>
+        <section name="Name">Graphics (2009 - Personal Project)</section>
         <section name="URL">https://github.com/ANorwell/graphics</section>
         <section name="CodeURL">https://github.com/ANorwell/graphics</section>
         <section name="Description">An implementation of some graphics algorithms and design patterns in C++ and using OpenGL/GLSL. Includes a surface subdivision algorithm that acting on an implementation of half-edge data structure, a scene manager, shader manager, quaternion camera, hit detection, and small shader library including a Phong shader. Compiles to a program with a game-like interface in which you can fly around graphics scenes.</section>

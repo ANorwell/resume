@@ -2,17 +2,28 @@
 <base>
   <transform name='Experience'>##Position##</transform>
   <transform name="Position">
-  \cventry{##Date##}{\textbf{##Title##}}{}{##Company##}{}
+  \cventry{##Date##}{\textbf{##Title##}}{##Company##}{}{##Location##}
 { \begin{itemize} \itemsep -2pt
   ##Bullet##
 \end{itemize} }
   </transform>
 
-  <transform name="Skills">
-  \cvline{Languages}{##Languages##}
-  \cvline{Technologies + Standards}{##Techs##}
-  \cvline{Tools}{##Tools##, \LaTeX}
-</transform>
+  <transform name="Summary">
+   \cvline{}{##SummaryItem##}
+  </transform>
+
+  <transform name="Proficiencies">
+    ##Items##
+  </transform>
+  
+  
+  <transform name="Proficiencies2">
+    \begin{multicols}{2}[##ProficiencyItem##]]
+  </transform>
+
+  <transform name="Languages">
+  \cvline{Languages}{##Languages1##}
+  </transform>
 
   <transform name='Education'>##Position##</transform>
 
