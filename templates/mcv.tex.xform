@@ -3,7 +3,7 @@
   <transform name='Experience'>##Position##</transform>
   <transform name="Position">
   \cventry{##Date##}{\textbf{##Title##}}{##Company##}{}{##Location##}
-{ \begin{itemize} \itemsep -2pt
+{ \begin{itemize} \itemsep -1pt
   ##Bullet##
 \end{itemize} }
   </transform>

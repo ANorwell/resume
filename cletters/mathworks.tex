@@ -1,0 +1,104 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt]{article}
+
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+\else
+  \usepackage[dvips]{graphicx}\fi
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Arron}
+\def\familyname{Norwell}
+\def\FileAuthor{\firstname \familyname}
+\def\FileTitle{\firstname \familyname's cover letter}
+\def\FileSubject{Cover letter}
+\def\FileKeyWords{\firstname \familyname, Cover letter}
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+{\bfseries Arron Norwell}\\[.35ex]
+\small\itshape%
+135 Isabella St \#507\\
+Toronto, ON M4Y 1P4\\[.35ex]
+\Telefon~(647) 987-3081\\
+\Letter~\href{mailto:anorwell@gmail.com}{anorwell@gmail.com}
+\end{minipage}\\[1em]
+%
+\begin{minipage}[t]{.4\textwidth}
+\raggedright%
+{\bfseries Mathworks}\\[.35ex]
+\small\itshape%
+USA-MA-Natick \\
+Job: 10500-JJUS
+\end{minipage}
+\hfill % US style
+%\\[1em] % UK style
+\begin{minipage}[t]{.4\textwidth}
+\raggedleft % US style
+\today
+%April 6, 2006 % US informal style
+%05/04/2006 % UK formal style
+\end{minipage}\\[2em]
+\raggedright
+Dear Sir or Madam:\\[1.5em]
+%
+I would like to express my interest in the position of Senior Software Developer - Internet Services Platform at Mathworks. I have extensive experience designing and scaling cloud-based software from zero users to a robust software platform proven to support hundreds of thousands of concurrent users. I have over seven years software development experience, and have successfully delivered important projects as a project and team leader. My excellent design skills and ability to contribute to a team make me a natural fit for this role.
+
+Since April 2012, I’ve been working at mDialog as a Software Developer and Team Lead. I helped design, build, and scale their cloud (Amazon Web Services)  platform from zero users to a robust, distributed platform that supports over 250,000 concurrent video streams. To achieve this scale, we built efficient vertically scalable Java VM server applications in Scala and Java, backed by PostgreSQL and Redis; Apache Zookeeper, ZeroMQ, and other technologies were used to horizontally scale our distributed system. As a team lead in part of an agile development process, I managed teams to deliver multiple projects successfully and on time. For example, I designed and helped develop a multi-component cloud software product that went from inception to delivery to our large client within three months; that product is currently in production and being marketed to major media companies.
+
+Previously at Microsoft, I designed and implemented a test framework and data visualization tool in perl, python, and R that was used by several teams and was responsible for testing software that handed many thousands of VOIP calls per day for Fortune 50 clients. I architected and built an automated nightly build and test system, and managed performance analytics for my group.
+
+I have a strong academic background, having completed a Masters Degree in Theoretical Computer Science from the University of Toronto in February 2012. My thesis used graph theory and statistics to show a result about real-world (e.g. social) networks. I finished with a 4.0 GPA and presented several seminar talks during my tenure there. I develop avidly on my own time, and my github account (github.com/ANorwell) shows the various personal projects and open source contributions I’ve made.
+
+In summary, my proven experience building scalable cloud systems along with my passion for building well-crafted, high-quality software makes me a great fit for the Internet Services Platform team at Mathworks. I hope to further discuss this position with you.
+
+Yours Sincerely,\\[2em] % if the opening is "Dear Mr(s) Doe,"
+%Yours faithfully,\\[2em] % if the opening is "Dear Sir or Madam,"
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries Arron Norwell}\\
+%
+%\vfill%
+%{\slshape Enclosure}
+%{\slshape Attachment: curriculum vit\ae{}}
+\end{document}

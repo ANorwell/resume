@@ -76,7 +76,7 @@
         <section name="Bullet">
           <entry>Designed and implemented components of a distributed, asynchronous, and highly scalable video streaming platform built in Scala, Java, and C, using Redis, PostgreSQL, Apache Zookeeper, and ZeroMQ.</entry>
           <entry>As project lead, worked with another developer to deliver a multiple-component project successfully and on-time to a large external client; acted as external-facing technical point of contact for that product.</entry>
-          <entry>Supervised teams of one to two other developers during two week Agile sprints, responsible for creating new applications and adding features to new applications.</entry>
+          <entry>Supervised teams of developers as part of an Agile development process, responsible for design and implementation of new applications and features.</entry>
           <entry>Horizontally and vertically scaled software platform from zero users to over 250,000 concurrent video streams running on clusters of over fifty machines; designed software components proven to scale vertially to thousands of requests per second.</entry>
           <entry>Analyzed, profiled, and created tools for visualizing the performance of Java Virtual Machine (JVM) applications.</entry>
           <entry>Open-sourced several internally-developed Scala libraries, including an asynchronous Redis client, an asynchronous HTTP client and server, and a ZeroMQ library.</entry>
@@ -101,7 +101,7 @@
       </entry>
 
       <entry>
-        <section name="Title">Software Development Engineer in Test Intern</section>
+        <section name="Title">Software Development Engineer in Test</section>
         <section name="Date">May 2008 - Aug 2008</section>
         <section name="Location">Mountain View, CA</section>
         <section name="Company">Tellme Networks</section>
@@ -120,23 +120,23 @@
         <section name="Company">University of Toronto</section>
         <section name="URL">http://www.utoronto.ca</section>
         <section name="Bullet">
-          <entry>Acted as teaching assistant for second year data structures course and first year math and logic course</entry>
-          <entry>Gave tutorial lectures on selected topics to classes of students</entry>
-          <entry>Provided one-on-one office-hour guidance and instruction to students</entry>
+          <entry>Acted as teaching assistant for second year data structures course and first year math and logic course.</entry>
+          <entry>Gave tutorial lectures on selected topics to classes of students.</entry>
+          <entry>Provided one-on-one office-hour guidance and instruction to students.</entry>
         </section>
       </entry>
 
      
       <entry>
-        <section name="Title">Intern</section>
+        <section name="Title">Database Developer</section>
         <section name="Date">May 2007 - Aug 2007</section>
         <section name="Location">Vancouver, BC</section>
         <section name="Company">BC Wildlife Federation</section>
         <section name="URL">http://bcwf.bc.ca</section>
         <section name="Bullet">
-          <entry>Provided Database Support and Database Programming</entry>
-          <entry>Implemented Features and User Interface for in-house client tracking app</entry>
-          <entry>Provided IT and Networking Support</entry>
+          <entry>Provided Database Support and Database Programming.</entry>
+          <entry>Implemented Features and User Interface for in-house client tracking app.</entry>
+          <entry>Provided IT and Networking Support.</entry>
         </section>
       </entry>
 
@@ -149,23 +149,25 @@
       <entry>
         <section name="Company">University of Toronto</section>
         <section name="Date">Sept 2010 - Feb 2012</section>
-        <section name="Location">Toronto, ON</section>
+        <section name="Location">Toronto, Ontario, Canada</section>
         <section name="URL">http://cs.toronto.edu/~anorwell</section>
-        <section name="Title">Masters - Computer Science</section>
+        <section name="Title">M.Sc. - Computer Science</section>
         <section name="Bullet">
-          <entry>Supervisor: Mike Molloy (Theory Group)</entry>
+          <entry>Thesis: \textit{A Threshold for Clusters in Real-World Random Networks}</entry>
           <entry>GPA: 4.0 </entry>
-          <entry>Thesis: A Threshold for Clusters in Real-World Random Networks</entry>
-          <entry>Seminar Talks Given: Balanced Graph Partition Problems; The Diameter of a Scale-Free Graph; A Threshold for Clusters in Real-World Random Networks</entry>
+          <entry>Seminar Talks Given:
+          \\ \textit{Balanced Graph Partition Problems}, Mar 2011
+          \\ \textit{The Diameter of a Scale-Free Graph}, Nov 2011
+          \\ \textit{A Threshold for Clusters in Real-World Random Networks}, Dec 2011</entry>
         </section>
       </entry>
 
         <entry>
         <section name="Company">University of British Columbia</section>
-        <section name="Date">2006 - 2009</section>
-        <section name="Location">Vancouver, BC</section>
+        <section name="Date">Sept 2006 - May 2009</section>
+        <section name="Location">Vancouver, British Columbia, Canada</section>
         <section name="URL">http://ubc.ca</section>
-        <section name="Title">BS - Combined Honours, Mathematics and Computer Science</section>
+        <section name="Title">B.Sc. - Combined Honours, Mathematics and Computer Science</section>
         <section name="Bullet">
           <entry>GPA: 92</entry>
           <entry>Courses: Computer Graphics, AI, Programming Languages, Software Engineering, Advanced Algorithms, Numerical Methods for PDEs, Compilers and Interpreters </entry>
@@ -185,7 +187,7 @@
       </entry>
 
       <entry>
-        <section name="Name">Website (2010-13 - Personal Project)</section>
+        <section name="Name">anorwell.com (2010-13 - Personal Project)</section>
         <section name="URL">http://anorwell.com</section>
         <section name="CodeURL">https://github.com/ANorwell/website</section>
         <section name="Description">My personal website is a minimally-featured blog tool written from scratch. Implemented feature-equivalently in two versions: Ajax with a Python/MySQL backend, and PHP.  Supports upload, storage, and display of posts and music, as well as comments using Facebook's comment system. </section>
