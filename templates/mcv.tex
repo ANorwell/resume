@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvtheme[blue]{classic}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.8, top=2cm, bottom=1cm]{geometry}
+
+% personal data
+
+% personal data
+\firstname{Arron}
+\familyname{Norwell}
+%\address{Office 719 SEO\\ 851 S. Morgan St.}{Chicago, IL}
+\extrainfo{Toronto, ON \\ anorwell.com \\ github.com/ANorwell}
+\phone{647-987-3081}
+\email{anorwell@gmail.com}
+  
+
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}
+
+ % the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+\definecolor{web}{rgb}{0.2,0.2,0.2}
+%\definecolor{web}{rgb}{0.5,0.5,0.5}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{\textbf{Summary}}
+
+   \cvline{}{
+      A results-oriented developer with proven experience designing and building robust, scalable, and concurrent backend software. Expertise with distributed computing, SQL and no-SQL database application development, and performance optimization. Experience leading teams and managing important projects that were delivered successfully and on-time.
+    }
+  
+
+\section{\textbf{Skills}}
+
+    
+      \cvlistdoubleitem{HTTP REST APIs (XML, JSON)}
+                       {Agile (Scrum, TDD, BDD)}
+      \cvlistdoubleitem{Relational DBs (Postgres, MySQL)}
+                       {No-SQL (Redis, MongoDB, Varnish)}
+      \cvlistdoubleitem{Distributed Systems (ZeroMQ, Zookeeper)}
+                       {Cloud Applications (AWS)}
+      \cvlistdoubleitem{ Version Control Systems (git, SVN)}
+                       { Build Tools (Make, maven, sbt) }
+      \cvlistdoubleitem{ Scalability and Performance Optimization }
+                       {HTML5 + CSS; JS Frameworks }
+    
+  
+%\subsection{\textbf{Languages}}
+
+  \cvline{Languages}{Java, Scala, C, C++, Ruby, Javascript, Perl, Python, elisp, clojure, Go, R, Matlab}
+  
+
+\section{\textbf{Experience}}
+
+  \cventry{Nov 2013 - Present}{\textbf{Senior Software Engineer}}{Backupify}{}{Cambridge, MA}
+{ \begin{itemize} \itemsep -1pt
+  \item Designed and implemented stability, scalability, and feature improvements to a large distributed systems architecture, able to support backups for over a million users daily and built in Ruby on Rails using Redis, PostgresQL, Cassandra, and Amazon S3.\item Designed and implemented an extendable API client and authentication framework that handled tens of millions of requests per day against many different APIs.\item Led a team to upgrade Backupify's login and API usage from OAuth 1 to OAuth 2.\item Led a team involved in building a permissions management system as part of an effort to convert to a service-oriented architecture.\item Designed a system monitoring dashboard that provided live application health and performance information to engineers.\item Provided direction on the engineer hiring process by designing the technical practical completed by candidates, improving the company interview process, and interviewing candidates.
+\end{itemize} }
+  
+  \cventry{Apr 2012 - Present}{\textbf{Software Developer / Team Lead}}{mDialog}{}{Toronto, ON}
+{ \begin{itemize} \itemsep -1pt
+  \item Designed and implemented components of a distributed, asynchronous, and highly scalable video streaming platform built in Scala, Java, and C, using Redis, PostgreSQL, Apache Zookeeper, and ZeroMQ.\item As project lead, worked with another developer to deliver a multiple-component project successfully and on-time to a large external client; acted as external-facing technical point of contact for that product.\item Supervised teams of developers as part of an Agile development process, responsible for design and implementation of new applications and features.\item Horizontally and vertically scaled a software platform from zero users to over 250,000 concurrent video streams running on clusters of over fifty machines; designed software components proven to scale vertially to thousands of requests per second.\item Analyzed, profiled, and created tools for visualizing the performance of Java Virtual Machine (JVM) applications.\item Open-sourced several internally-developed Scala libraries, including an asynchronous Redis client, an asynchronous HTTP client and server, and a ZeroMQ library.\item Interviewed potential new hires and participated in code reviews.
+\end{itemize} }
+  
+  \cventry{May 2009 - Aug 2010}{\textbf{Software Development Engineer in Test}}{Microsoft}{}{Mountain View, CA}
+{ \begin{itemize} \itemsep -1pt
+  \item Engineered tests for VOIP platform infrastructure used by large corporate clients to handle thousands of calls per day\item Led project to Design and implement VOIP test framework for quick and flexible creation and execution of tests, with web UI for test reporting\item Designed and implemented environment and tools for nightly builds of code and automated execution of tests against those builds\item Designed and executed tests to evaluate VOIP call performance. Created graphing tools for visualization of performance data.\item Interviewed potiential new hires.\item Languages: Perl, C++, Javascript, Python, R
+\end{itemize} }
+  
+  \cventry{May 2008 - Aug 2008}{\textbf{Software Development Engineer in Test}}{Tellme Networks}{}{Mountain View, CA}
+{ \begin{itemize} \itemsep -1pt
+  \item Designed and implemented test automation framework for back-end VOIP system\item Developed various automated test utilities\item Worked in conjunction with developers to find, test, and resolve bugs
+\end{itemize} }
+  
+  \cventry{Sept 2010 - Dec 2012}{\textbf{Teaching Assistant}}{University of Toronto}{}{Toronto, ON}
+{ \begin{itemize} \itemsep -1pt
+  \item Acted as teaching assistant for second year data structures course and first year math and logic course.\item Gave tutorial lectures on selected topics to classes of students.\item Provided one-on-one office-hour guidance and instruction to students.
+\end{itemize} }
+  
+  \cventry{May 2007 - Aug 2007}{\textbf{Database Developer}}{BC Wildlife Federation}{}{Vancouver, BC}
+{ \begin{itemize} \itemsep -1pt
+  \item Provided Database Support and Database Programming.\item Implemented Features and User Interface for in-house client tracking app.\item Provided IT and Networking Support.
+\end{itemize} }
+  
+
+\section{\textbf{Education}}
+
+  \cventry{Sept 2010 - Feb 2012}{\textbf{M.Sc. - Computer Science}}{University of Toronto}{}{Toronto, Ontario, Canada}
+{ \begin{itemize} \itemsep -1pt
+  \item Thesis: \textit{A Threshold for Clusters in Real-World Random Networks}\item GPA: 4.0 \item Seminar Talks Given:
+          \\ \textit{Balanced Graph Partition Problems}, Mar 2011
+          \\ \textit{The Diameter of a Scale-Free Graph}, Nov 2011
+          \\ \textit{A Threshold for Clusters in Real-World Random Networks}, Dec 2011
+\end{itemize} }
+  
+  \cventry{Sept 2006 - May 2009}{\textbf{B.Sc. - Combined Honours, Mathematics and Computer Science}}{University of British Columbia}{}{Vancouver, British Columbia, Canada}
+{ \begin{itemize} \itemsep -1pt
+  \item GPA: 92\item Courses: Computer Graphics, AI, Programming Languages, Software Engineering, Advanced Algorithms, Numerical Methods for PDEs, Compilers and Interpreters 
+\end{itemize} }
+  
+
+\section{\textbf{Selected Projects/Open Source}}
+
+\cventry{}{\textbf{Stieltjes (2013 - Personal Project)}}{http://github.com/ANorwell/stieltjes}{}{}{A minimal, asynchronous UDP-based Scala cleint for Riemann, the distributed application monitoring system. }
+  
+\cventry{}{\textbf{anorwell.com (2010-13 - Personal Project)}}{http://anorwell.com}{}{}{My personal website is a minimally-featured blog tool written from scratch. Implemented feature-equivalently in two versions: Ajax with a Python/MySQL backend, and PHP.  Supports upload, storage, and display of posts and music, as well as comments using Facebook's comment system. }
+  
+\cventry{}{\textbf{Brando (2013 - Contributor)}}{http://github.com/chrisdinn/brando}{}{}{An Akka-based Redis client in Scala; supports sharding and pipelining.}
+  
+\cventry{}{\textbf{InterviewStreet (2012 - Personal Project)}}{http://github.com/ANorwell/InterviewStreet}{}{}{Implementations of solutions to various InterviewStreet coding problems. Several interesting graphing and network algorithms; implemented in Ruby and C. }
+  
+\cventry{}{\textbf{Graph.js (2011-12 - Personal Project)}}{http://anorwell.com/graph}{}{}{A Javascript Graph creation and visualization API using HTML 5 Canvas. Allows for flexible appearance and manipulation of graphs.  The example app created using this API allows users to draw, save (either using HTML5 LocalStorage or to the cloud),and share their graphs. }
+  
+\cventry{}{\textbf{Resume Maker (2012 - Personal Project)}}{https://github.com/ANorwell/resume}{}{}{A tool for creating multiple versions of a resume (or other document) by combining an Info XML file with template files that define the formatting to be applied to the info. For example, generate a latex and html version of the same resume. HTML/JS front-end to a perl backend. (This resume was automatically generated using this tool.)}
+  
+\cventry{}{\textbf{Graphics (2009 - Personal Project)}}{https://github.com/ANorwell/graphics}{}{}{An implementation of some graphics algorithms and design patterns in C++ and using OpenGL/GLSL. Includes a surface subdivision algorithm that acting on an implementation of half-edge data structure, a scene manager, shader manager, quaternion camera, hit detection, and small shader library including a Phong shader. Compiles to a program with a game-like interface in which you can fly around graphics scenes.}
+  
+
+
+%\section{\textbf{Publications}}
+
+
+
+\end{document}
