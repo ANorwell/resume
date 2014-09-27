@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.26)  27 SEP 2014 01:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.26)  27 SEP 2014 01:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1033,8 +1033,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 34.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 34.
-
-No file mcv.aux.
+ (./mcv.aux)
 \openout1 = `mcv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -1054,7 +1053,7 @@ LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 34.
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/lm/t1lmr.fd
+ (/usr/local/texlive/2014basic/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/local/texlive/2014basic/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -1157,12 +1156,14 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 34.
 LaTeX Info: Redefining \pageref on input line 34.
 LaTeX Info: Redefining \nameref on input line 34.
+ (./mcv.out) (./mcv.out)
 \@outlinefile=\write4
 \openout4 = `mcv.out'.
 
 \makecvtitledetailsbox=\box55
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 36.
- (/usr/local/texlive/2014basic/texmf-dist/tex/latex/lm/ot1lmr.fd
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 36.
@@ -1210,45 +1211,39 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 105.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 100.
 
-Underfull \hbox (badness 2318) in paragraph at lines 115--115
+Underfull \hbox (badness 2318) in paragraph at lines 110--110
 []\T1/lmss/bx/n/10.95 fileUploader.js (2014 - Per-sonal Project)\T1/lmss/m/n/10
 .95 (+20) , \T1/lmss/m/sl/10.95 (+20) http://github.com/ANorwell/nginx-
  []
 
 
-Overfull \hbox (7.30415pt too wide) in paragraph at lines 123--123
+Overfull \hbox (7.30415pt too wide) in paragraph at lines 118--118
 []\T1/lmss/bx/n/10.95 InterviewStreet (2012 - Per-sonal Project)\T1/lmss/m/n/10
 .95 (-20) , \T1/lmss/m/sl/10.95 (-20) http://github.com/ANorwell/InterviewStree
 t\T1/lmss/m/n/10.95 (-20) .| 
  []
 
-[2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (./mcv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+Package rerunfilecheck Info: File `mcv.out' has not changed.
+(rerunfilecheck)             Checksum: F44A7271C206E0C872A855F0794255AC;526.
 
-
-Package rerunfilecheck Warning: File `mcv.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mcv.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  F44A7271C206E0C872A855F0794255AC;526.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 26771 strings out of 494522
- 495361 string characters out of 6167205
- 563010 words of memory out of 5000000
- 29602 multiletter control sequences out of 15000+600000
- 58097 words of font info for 73 fonts, out of 8000000 for 9000
+ 26780 strings out of 494522
+ 495445 string characters out of 6167205
+ 563114 words of memory out of 5000000
+ 29608 multiletter control sequences out of 15000+600000
+ 57996 words of font info for 72 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  69i,11n,58p,10365b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014basic/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/l
@@ -1257,10 +1252,10 @@ r/local/texlive/2014basic/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/loc
 al/texlive/2014basic/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/te
 xlive/2014basic/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texli
 ve/2014basic/texmf-dist/fonts/type1/public/lm/lmsso10.pfb>
-Output written on mcv.pdf (3 pages, 114423 bytes).
+Output written on mcv.pdf (2 pages, 113398 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 18445 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 65 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
+ 18485 words of extra memory for PDF output out of 20736 (max. 10000000)
 
