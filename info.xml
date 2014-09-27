@@ -33,7 +33,7 @@
       \cvlistdoubleitem{ Scalability and Performance Optimization }
                        {HTML5 + CSS; JS Frameworks }
     </section>
-      
+
     <section name="Items">
       \cvlistdoubleitem{HTTP REST APIs (XML, JSON)}
                        {Agile (Scrum, TDD, BDD)}
@@ -47,7 +47,7 @@
                        {HTML5 + CSS; JS Frameworks }
     </section>
   </section>
-  
+
   <section name="Languages">
     <section name="Languages1">Java, Scala, C, C++, Ruby, Javascript, Perl, Python, elisp, clojure, Go, R, Matlab</section>
   </section>
@@ -64,8 +64,24 @@
 
 
   <section name="Experience">
-    
+
     <section name="Position">
+
+      <entry>
+        <section name="Title">Senior Software Engineer</section>
+        <section name="Date">Nov 2013 - Present</section>
+        <section name="Location">Cambridge, MA</section>
+        <section name="Company">Backupify</section>
+        <section name="URL">http://backupify.com</section>
+        <section name="Bullet">
+          <entry>Designed and implemented stability, scalability, and feature improvements to a large distributed systems architecture, able to support backups for over a million users daily and built in Ruby on Rails using Redis, PostgresQL, Cassandra, and Amazon S3.</entry>
+          <entry>Designed and implemented an extendable API client and authentication framework that handled tens of millions of requests per day against many different APIs.</entry>
+          <entry>Led a team to upgrade Backupify's login and API usage from OAuth 1 to OAuth 2.</entry>
+          <entry>Led a team involved in building a permissions management system as part of an effort to convert to a service-oriented architecture.</entry>
+          <entry>Designed a system monitoring dashboard that provided live application health and performance information to engineers.</entry>
+          <entry>Provided direction on the engineer hiring process by designing the technical practical completed by candidates, improving the company interview process, and interviewing candidates.</entry>
+        </section>
+      </entry>
 
       <entry>
         <section name="Title">Software Developer / Team Lead</section>
@@ -77,7 +93,7 @@
           <entry>Designed and implemented components of a distributed, asynchronous, and highly scalable video streaming platform built in Scala, Java, and C, using Redis, PostgreSQL, Apache Zookeeper, and ZeroMQ.</entry>
           <entry>As project lead, worked with another developer to deliver a multiple-component project successfully and on-time to a large external client; acted as external-facing technical point of contact for that product.</entry>
           <entry>Supervised teams of developers as part of an Agile development process, responsible for design and implementation of new applications and features.</entry>
-          <entry>Horizontally and vertically scaled software platform from zero users to over 250,000 concurrent video streams running on clusters of over fifty machines; designed software components proven to scale vertially to thousands of requests per second.</entry>
+          <entry>Horizontally and vertically scaled a software platform from zero users to over 250,000 concurrent video streams running on clusters of over fifty machines; designed software components proven to scale vertially to thousands of requests per second.</entry>
           <entry>Analyzed, profiled, and created tools for visualizing the performance of Java Virtual Machine (JVM) applications.</entry>
           <entry>Open-sourced several internally-developed Scala libraries, including an asynchronous Redis client, an asynchronous HTTP client and server, and a ZeroMQ library.</entry>
           <entry>Interviewed potential new hires and participated in code reviews.</entry>
@@ -126,7 +142,7 @@
         </section>
       </entry>
 
-     
+
       <entry>
         <section name="Title">Database Developer</section>
         <section name="Date">May 2007 - Aug 2007</section>
@@ -140,7 +156,7 @@
         </section>
       </entry>
 
-      
+
     </section>
   </section>
 
@@ -174,11 +190,18 @@
         </section>
         </entry>
     </section>
-        
+
   </section>
 
   <section name="Projects">
     <section name="Project">
+      <entry>
+        <section name="Name">fileUploader.js (2014 - Personal Project)</section>
+        <section name="URL">http://github.com/ANorwell/nginx-resumable-upload</section>
+        <section name="CodeURL">https://github.com/ANorwell/nginx-resumable-upload</section>
+        <section name="Description">A HTML5 javascript library resumable file uploads, designed for use with nginx's resumable upload module. </section>
+      </entry>
+
       <entry>
         <section name="Name">Stieltjes (2013 - Personal Project)</section>
         <section name="URL">http://github.com/ANorwell/stieltjes</section>
@@ -221,12 +244,12 @@
         <section name="Description">A tool for creating multiple versions of a resume (or other document) by combining an Info XML file with template files that define the formatting to be applied to the info. For example, generate a latex and html version of the same resume. HTML/JS front-end to a perl backend. (This resume was automatically generated using this tool.)</section>
       </entry>
 
-      <entry> 
+      <entry>
         <section name="Name">Graphics (2009 - Personal Project)</section>
         <section name="URL">https://github.com/ANorwell/graphics</section>
         <section name="CodeURL">https://github.com/ANorwell/graphics</section>
         <section name="Description">An implementation of some graphics algorithms and design patterns in C++ and using OpenGL/GLSL. Includes a surface subdivision algorithm that acting on an implementation of half-edge data structure, a scene manager, shader manager, quaternion camera, hit detection, and small shader library including a Phong shader. Compiles to a program with a game-like interface in which you can fly around graphics scenes.</section>
-      </entry>  
+      </entry>
 
     </section>
   </section>
