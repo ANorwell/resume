@@ -8,15 +8,15 @@
     <section name="Email">anorwell@gmail.com</section>
     <section name="Website">anorwell.com</section>
     <section name="Github">github.com/ANorwell</section>
-    <section name="Phone">647-987-3081</section>
+    <section name="Phone">857-266-4119</section>
     <section name="Address">
-      <entry>Toronto, ON</entry>
+      <entry>Cambridge, MA</entry>
     </section>
   </section>
 
   <section name="Summary">
     <section name="SummaryItem">
-      A results-oriented developer with proven experience designing and building robust, scalable, and concurrent backend software. Expertise with distributed computing, SQL and no-SQL database application development, and performance optimization. Experience leading teams and managing important projects that were delivered successfully and on-time.
+      A results-oriented engineer with proven experience designing and building robust, scalable, and concurrent backend software. Expertise with distributed computing, SQL and no-SQL database application development, and performance optimization. Experience leading teams and managing important projects that were delivered successfully and on-time.
     </section>
   </section>
 
@@ -74,7 +74,7 @@
         <section name="Company">Backupify</section>
         <section name="URL">http://backupify.com</section>
         <section name="Bullet">
-          <entry>Designed and implemented stability, scalability, and feature improvements to a large distributed systems architecture, able to support backups for over a million users daily and built in Ruby on Rails using Redis, PostgresQL, Cassandra, and Amazon S3.</entry>
+          <entry>Designed and implemented stability, scalability, and feature improvements for a large distributed systems architecture, able to support backups for over a million users daily and built in Ruby on Rails using Redis, PostgresQL, Cassandra, and Amazon S3.</entry>
           <entry>Designed and implemented an extendable API client and authentication framework that handled tens of millions of requests per day against many different APIs.</entry>
           <entry>Led a team to upgrade Backupify's login and API usage from OAuth 1 to OAuth 2.</entry>
           <entry>Led a team involved in building a permissions management system as part of an effort to convert to a service-oriented architecture.</entry>
