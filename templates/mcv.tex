@@ -11,6 +11,7 @@
 % personal data
 \firstname{Arron}
 \familyname{Norwell}
+
 \extrainfo{Medford, MA \\ anorwell.com \\ github.com/ANorwell}
 \phone{857-266-4119}
 \email{anorwell@gmail.com}
@@ -46,31 +47,37 @@
 
 
       \cvlistdoubleitem{Software Architecture and Design}
-                       {Agile (Scrum, Kanban)}
-      \cvlistdoubleitem{Relational DBs (Postgres, MySQL)}
-                       {No-SQL (Redis, Cassandra, Elasticsearch)}
-      \cvlistdoubleitem{Distributed Systems}
                        {Cloud (AWS, Google Cloud, Azure)}
-      \cvlistdoubleitem{ HTTP APIs (REST, OpenAPI, OAuth)}
-                       { DevOps (CI/CD, Docker, Puppet, ) }
-      \cvlistdoubleitem{ Scalability and Performance Optimization }
-                       {Web Dev (Vue, TS/JS, Ruby on Rails) }
+      \cvlistdoubleitem{Relational DBs (Postgres, MySQL)}
+                       {NoSQL (DynamoDB, Elasticsearch, Redis)}
+      \cvlistdoubleitem{Distributed Systems}
+                       {Scalability and Performance Optimization}
+      \cvlistdoubleitem{APIs (HTTP, REST, OpenAPI, Protobuf)}
+                       { DevOps (CI/CD, CDK, Containers) }
 
 
 %\subsection{\textbf{Languages}}
 
-  \cvline{Languages:}{Scala, Ruby, Rust, Python, Go, Typescript, Javascript}
+  \cvline{Languages:}{Java, Python, Rust, Scala, Ruby, Go, Typescript, Javascript}
 
 
 \section{\textbf{Experience}}
 
-\cventry{June 2017 - Present}{\textbf{Principal Software Engineer}}{Datto}{}{Boston, MA}
+\cventry{Oct 2020 - Present}{\textbf{Senior Software Engineer}}{Amazon Web Services}{}{Boston, MA}
+{ \begin{itemize} \itemsep -1pt
+  \item Designed and implemented the Elastic File System (EFS) cross-region replication feature, using Java, Python, and AWS CDK.
+  \item Built simulation environment and property testing system to allow programmable, developer-driven, end-to-end randomized testing of EFS under the presence of faults and concurrent modifications.
+  \item Analyzed and optimized performance of the EFS backup and restore system, resulting in a 4x throughput improvement.
+  \item Supported and mentored a team of 8 engineers with code reviews, design reviews, learning sessions, and interviews.
+  \item Operational and infrastructure development for a globally-deployed distributed system with millions of users.
+ \end{itemize} }
+
+\cventry{June 2017 - Oct 2020}{\textbf{Principal Software Engineer}}{Datto}{}{Boston, MA}
 { \begin{itemize} \itemsep -1pt
   \item Initial developer and technical lead on reimplementation of SaaS backup system, using Scala, Elasticsearch, and ZFS.
     This system went live ahead of schedule with an improved featureset and has now replaced the original system, supporting millions of users and storing dozens of petabytes of data.
   \item Prototyped new product features that became incorporated into product, including a customer-facing backup details information view, reporting visualization view, and Azure-based Exchange data restore tool.
   \item Set up application monitoring framework and libraries to consistently collect app events and metrics, providing observability, dashboards, and KPIs for a large distributed system that handles hundreds of millions of events per day.
-  \item Designed and helped implementg backup management and configuration system.
   \item Supported three scrum teams with architectural guidance, mentoring, and code reviews.
   \item Worked with Scrum product owners and engineering leadership to help plan product roadmap and set technical direction.
  \end{itemize} }
@@ -87,10 +94,7 @@
   \cventry{Apr 2012 - Nov 2013}{\textbf{Software Developer / Team Lead}}{mDialog}{}{Toronto, ON}
 { \begin{itemize} \itemsep -1pt
   \item Designed and implemented components of a distributed, asynchronous, and highly scalable video streaming platform built in Scala, Java, and C, using Redis, PostgreSQL, Apache Zookeeper, and ZeroMQ.
-  \item As project lead, worked with another developer to deliver a multiple-component project successfully and on-time to a large external client; acted as external-facing technical point of contact for that product.
-  \item Supervised teams of developers as part of an Agile development process, responsible for design and implementation of new applications and features.
   \item Horizontally and vertically scaled a software platform from zero users to over 250,000 concurrent video streams running on clusters of over fifty machines; designed software components proven to scale vertially to thousands of requests per second.
-  \item Analyzed, profiled, and created tools for visualizing the performance of Java Virtual Machine (JVM) applications.
   \item Open-sourced several internally-developed Scala libraries, including an asynchronous Redis client, an asynchronous HTTP client and server, and a ZeroMQ library.
   \item Interviewed potential new hires and participated in code reviews.
   \item mDialog was acquired by Google in April 2014.
@@ -98,14 +102,16 @@
 
   \cventry{May 2009 - Aug 2010}{\textbf{Software Development Engineer in Test}}{Microsoft}{}{Mountain View, CA}
 { \begin{itemize} \itemsep -1pt
-  \item Engineered tests for VOIP platform infrastructure used by large corporate clients to handle thousands of calls per day\item Led project to Design and implement VOIP test framework for quick and flexible creation and execution of tests, with web UI for test reporting\item Created automated graphing tools for visualization of performance data.\item Languages: Perl, C++, Javascript, Python, R
+  \item Led project to Design and implement VOIP test framework for quick and flexible creation and execution of tests, with web UI for test reporting.
+  \item Created automated graphing tools for visualization of performance data.
 \end{itemize} }
 
 \section{\textbf{Education}}
 
   \cventry{Sept 2010 - Feb 2012}{\textbf{M.Sc. - Computer Science}}{University of Toronto}{}{Toronto, Ontario, Canada}
 { \begin{itemize} \itemsep -1pt
-  \item Thesis: \textit{A Threshold for Clusters in Real-World Random Networks}\item GPA: 4.0
+  \item Thesis: \textit{A Threshold for Clusters in Real-World Random Networks}
+  \item GPA: 4.0
 \end{itemize} }
 
   \cventry{Sept 2006 - May 2009}{\textbf{B.Sc. - Combined Honours, Mathematics and Computer Science}}{University of British Columbia}{}{Vancouver, British Columbia, Canada}
@@ -114,6 +120,9 @@
 \end{itemize} }
 
 \section{\textbf{Selected Projects/Open Source}}
+
+\cventry{}{\textbf{Claippy (2024 - Project)}}{github.com/ANorwell/claippy}{}{}
+  {The command line AI power programmer.}
 
 \cventry{}{\textbf{QuickBlog (2020 - Project)}}{github.com/ANorwell/quickblog}{}{}
   {An easy to use blogging tool that allows anyone to set up a blog in minutes. Powered by Vue.js, Typescript, and Gitlab Actions CI/CD.}
@@ -129,16 +138,6 @@
 
 \cventry{}{\textbf{Pyper (2015 - Primary Contributor)}}{github.com/datto/pyper}{}{}
   {A Ruby gem for constructing data storage and retrieval pipelines, with support for data validation and serialization.}
-
-\cventry{}{\textbf{fileUploader.js (2014 - Project)}}{github.com/ANorwell/nginx-resumable-upload}{}{}
-  {A HTML5 javascript library for resumable file uploads, designed for use with nginx's resumable upload module. }
-
-\cventry{}{\textbf{Brando (2013 - Contributor)}}{github.com/chrisdinn/brando}{}{}
-  {An Akka-based Redis client in Scala; supports sharding and pipelining.}
-
-\cventry{}{\textbf{Graph.js (2011-12 - Project)}}{github.com/ANorwell/graph}{}{}
-  {A Javascript Graph creation and visualization API using HTML 5 Canvas. Allows for flexible appearance and manipulation of graphs.  The example app created using this API allows users to draw, save (either using HTML5 LocalStorage or to the cloud),and share their graphs. }
-
 %\section{\textbf{Publications}}
 
 

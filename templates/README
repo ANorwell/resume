@@ -3,10 +3,16 @@ resume.pl script. They are not intended to be interacted with
 directly; use the makefile in the parent directory to generate
 resumes.
 
-Latex setup and run:
+Setup on debian:
 
-  tlmgr init-usertree
-  sudo apt-get install texlive-latex-extra texlive-latex-recommended xzdec
-  sudo tlmgr option repository ftp://tug.org/historic/systems/texlive/2017/tlnet-final
-  tlmgr install moderncv etoolbox
-  pdflatex mcv.tex
+```bash
+sudo apt update
+sudo apt install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra
+pdflatex --version
+tlmgr init-usertree
+tlmgr install moderncv etoolbox
+```
+
+```
+pdflatex mcv.tex
+```
