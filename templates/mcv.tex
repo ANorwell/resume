@@ -4,7 +4,7 @@
 
 \usepackage[utf8]{inputenc}
 
-\usepackage[scale=0.8, top=2cm, bottom=1cm]{geometry}
+\usepackage[scale=0.9, top=1cm, bottom=1cm, left=1.5cm, right=1.5cm]{geometry}
 
 % personal data
 
@@ -36,11 +36,7 @@
 
 \section{\textbf{Summary}}
 
-   \cvline{}{
-      A results-oriented engineer with proven experience designing and building robust, scalable, and concurrent backend software with millions of users, thousands of requests per second, and petabytes of data.
-      Expertise with distributed computing, SQL and no-SQL database application development, and performance optimization.
-      Experience architecting systems, leading teams, and delivering products successfully and on-time.
-    }
+   \cvline{}{Results-oriented engineer with expertise in scalable backend software, distributed systems, and performance optimization. Experience leading teams and delivering products successfully.}
 
 
 \section{\textbf{Skills}}
@@ -64,80 +60,39 @@
 \section{\textbf{Experience}}
 
 \cventry{Oct 2020 - Present}{\textbf{Senior Software Engineer}}{Amazon Web Services}{}{Boston, MA}
-{ \begin{itemize} \itemsep -1pt
-  \item Designed and implemented the Elastic File System (EFS) cross-region replication feature, using Java, Python, and AWS CDK.
-  \item Built simulation environment and property testing system to allow programmable, developer-driven, end-to-end randomized testing of EFS under the presence of faults and concurrent modifications.
-  \item Analyzed and optimized performance of the EFS backup and restore system, resulting in a 4x throughput improvement.
-  \item Supported and mentored a team of 8 engineers with code reviews, design reviews, learning sessions, and interviews.
-  \item Operational and infrastructure development for a globally-deployed distributed system with millions of users.
+{ \begin{itemize} \itemsep -2pt
+  \item Designed EFS cross-region replication feature using Java, Python, and AWS CDK.
+  \item Built end-to-end testing system for fault-tolerant distributed systems.
+  \item Optimized EFS backup system performance, achieving 4x throughput improvement.
+  \item Mentored team of 8 engineers; operational development for globally-deployed system with millions of users.
  \end{itemize} }
 
 \cventry{June 2017 - Oct 2020}{\textbf{Principal Software Engineer}}{Datto}{}{Boston, MA}
-{ \begin{itemize} \itemsep -1pt
-  \item Initial developer and technical lead on reimplementation of SaaS backup system, using Scala, Elasticsearch, and ZFS.
-    This system went live ahead of schedule with an improved featureset and has now replaced the original system, supporting millions of users and storing dozens of petabytes of data.
-  \item Prototyped new product features that became incorporated into product, including a customer-facing backup details information view, reporting visualization view, and Azure-based Exchange data restore tool.
-  \item Set up application monitoring framework and libraries to consistently collect app events and metrics, providing observability, dashboards, and KPIs for a large distributed system that handles hundreds of millions of events per day.
-  \item Supported three scrum teams with architectural guidance, mentoring, and code reviews.
-  \item Worked with Scrum product owners and engineering leadership to help plan product roadmap and set technical direction.
+{ \begin{itemize} \itemsep -2pt
+  \item Technical lead on SaaS backup system reimplementation using Scala, Elasticsearch, and ZFS. System supports millions of users and dozens of petabytes of data.
+  \item Built monitoring framework handling hundreds of millions of events daily; prototyped features including backup visualization and Azure Exchange restore.
+  \item Provided architectural guidance and mentoring to three scrum teams; collaborated on product roadmap and technical direction.
  \end{itemize} }
 
   \cventry{Nov 2013 - June 2017}{\textbf{Senior Software Engineer}}{Datto}{}{Boston, MA}
-{ \begin{itemize} \itemsep -1pt
-  \item Designed and implemented stability, scalability, and feature improvements for a large distributed systems architecture, able to support backups for over a million users daily and built in Ruby on Rails using Redis, PostgresQL, Cassandra, and Amazon S3.
-  \item Acted as project technical lead for a team of seven developers on a project to deliever a full Backup and Restore Solution for Office 365. Project was completed successfully and on-time. Presented the project to hundreds of partners at the DattoCon 2015 conference.
-  \item Designed and was main contributor to open-source projects for an internally-used Apache Cassandra client and schema management tool.
-  \item Designed and implemented an extendable API client and authentication framework that handled tens of millions of requests per day against many different APIs.
-  \item Led a team involved in building a permissions management system as part of an effort to convert to a service-oriented architecture.
+{ \begin{itemize} \itemsep -2pt
+  \item Built distributed backup system supporting 1M+ daily users using Ruby on Rails, Redis, PostgreSQL, Cassandra, and S3.
+  \item Led 7-developer team delivering Office 365 Backup/Restore solution on schedule; presented at DattoCon 2015.
+  \item Created open-source Cassandra client and API framework handling tens of millions of daily requests.
 \end{itemize} }
 
-  \cventry{Apr 2012 - Nov 2013}{\textbf{Software Developer / Team Lead}}{mDialog}{}{Toronto, ON}
-{ \begin{itemize} \itemsep -1pt
-  \item Designed and implemented components of a distributed, asynchronous, and highly scalable video streaming platform built in Scala, Java, and C, using Redis, PostgreSQL, Apache Zookeeper, and ZeroMQ.
-  \item Horizontally and vertically scaled a software platform from zero users to over 250,000 concurrent video streams running on clusters of over fifty machines; designed software components proven to scale vertially to thousands of requests per second.
-  \item Open-sourced several internally-developed Scala libraries, including an asynchronous Redis client, an asynchronous HTTP client and server, and a ZeroMQ library.
-  \item Interviewed potential new hires and participated in code reviews.
-  \item mDialog was acquired by Google in April 2014.
+  \cventry{Apr 2012 - Nov 2013}{\textbf{Software Developer / Team Lead}}{mDialog (acquired by Google)}{}{Toronto, ON}
+{ \begin{itemize} \itemsep -2pt
+  \item Built distributed video streaming platform in Scala/Java/C, scaling to 250K concurrent streams across 50+ machines.
+  \item Open-sourced asynchronous Redis, HTTP, and ZeroMQ Scala libraries.
 \end{itemize} }
 
-  \cventry{May 2009 - Aug 2010}{\textbf{Software Development Engineer in Test}}{Microsoft}{}{Mountain View, CA}
-{ \begin{itemize} \itemsep -1pt
-  \item Led project to Design and implement VOIP test framework for quick and flexible creation and execution of tests, with web UI for test reporting.
-  \item Created automated graphing tools for visualization of performance data.
-\end{itemize} }
 
 \section{\textbf{Education}}
+\cvline{}{\textbf{M.Sc. Computer Science}, University of Toronto (2012) • \textbf{B.Sc. Mathematics/CS}, UBC (2009)}
 
-  \cventry{Sept 2010 - Feb 2012}{\textbf{M.Sc. - Computer Science}}{University of Toronto}{}{Toronto, Ontario, Canada}
-{ \begin{itemize} \itemsep -1pt
-  \item Thesis: \textit{A Threshold for Clusters in Real-World Random Networks}
-  \item GPA: 4.0
-\end{itemize} }
-
-  \cventry{Sept 2006 - May 2009}{\textbf{B.Sc. - Combined Honours, Mathematics and Computer Science}}{University of British Columbia}{}{Vancouver, British Columbia, Canada}
-{ \begin{itemize} \itemsep -1pt
-  \item GPA: 92
-\end{itemize} }
-
-\section{\textbf{Selected Projects/Open Source}}
-
-\cventry{}{\textbf{Claippy (2024 - Project)}}{github.com/ANorwell/claippy}{}{}
-  {The command line AI power programmer.}
-
-\cventry{}{\textbf{QuickBlog (2020 - Project)}}{github.com/ANorwell/quickblog}{}{}
-  {An easy to use blogging tool that allows anyone to set up a blog in minutes. Powered by Vue.js, Typescript, and Gitlab Actions CI/CD.}
-
-\cventry{}{\textbf{SNP Reporter (2020 - Project)}}{github.com/ANorwell/SNPReporter}{}{}
-  {A Rust-based tool to scrape Single Nucleotide Polymorphism (SNP) genetic data and generate a genetic report based on raw data from 23AndMe and similar genetic or ancestry sites.}
-
-\cventry{}{\textbf{anorwell.com (2010-2020 - Project)}}{anorwell.com}{}{}
-  {My personal website is a minimally-featured blog tool, as well as other web-based experiences. Reimplemented multiple times in PHP, Python/MySQL, Vue/Typescript-powered static SPA.}
-
-\cventry{}{\textbf{CassSchema (2015 - Primary Contributor)}}{github.com/datto/cass\_schema}{}{}
-  {A Ruby gem for managing multiple cassandra schemas across multiple clusters.}
-
-\cventry{}{\textbf{Pyper (2015 - Primary Contributor)}}{github.com/datto/pyper}{}{}
-  {A Ruby gem for constructing data storage and retrieval pipelines, with support for data validation and serialization.}
+\section{\textbf{Selected Projects}}
+\cvline{}{Open source: CassSchema, Pyper, Claippy • Personal: anorwell.com, SNPReporter (Rust genetic analysis)}
 %\section{\textbf{Publications}}
 
 
