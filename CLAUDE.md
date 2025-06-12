@@ -4,30 +4,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a personal resume repository containing LaTeX source files for generating professional resumes. The primary working file is `templates/mcv.tex`, which uses the ModernCV LaTeX class.
+This is a personal resume repository containing LaTeX source files for generating professional resumes. The primary working file is `ArronNorwellResume.tex`, which uses the ModernCV LaTeX class.
 
 ## Key Commands
 
 ### Building the Resume
 ```bash
-# Navigate to templates directory and build PDF
-pdflatex mcv.tex
+# Build PDF from LaTeX source
+pdflatex ArronNorwellResume.tex
 ```
 
 ### Cleaning Build Files
 ```bash
 # Remove auxiliary files
-rm -f mcv.aux mcv.log mcv.out
+rm -f ArronNorwellResume.aux ArronNorwellResume.log ArronNorwellResume.out
 ```
 
 ## File Structure
 
-- `templates/mcv.tex` - Main LaTeX resume source file (actively maintained)
-- `templates/mcv.pdf` - Generated PDF output
-- `info.xml` - Legacy XML data file (not used with current workflow)
-- `resume.pl` - Legacy Perl template processor (defunct)
-- `Makefile` - Legacy build system (defunct)
-- Template files (`*.template`, `*.xform`) - Legacy template system (defunct)
+- `ArronNorwellResume.tex` - Main LaTeX resume source file (actively maintained)
+- `ArronNorwellResume.pdf` - Generated PDF output
+- `ArronNorwellResume*.pdf` - Historical resume versions
 
 ## Editing the Resume
 
