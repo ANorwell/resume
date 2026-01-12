@@ -65,3 +65,16 @@ On Debian/Ubuntu:
 ```bash
 sudo apt install texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 ```
+
+On macOS (using BasicTeX):
+```bash
+# Install BasicTeX via Homebrew
+brew install basictex
+
+# Add texbin to PATH (add to ~/.zshrc or ~/.bash_profile)
+export PATH="/Library/TeX/texbin:$PATH"
+
+# Update tlmgr and install required packages
+sudo tlmgr update --self
+sudo tlmgr install moderncv fontawesome etoolbox lm cm-super
+```
